@@ -13,6 +13,8 @@ const config: Config = {
         secondary_blue: "#11468D",
         accent_blue: "#2A57A7",
         highlight_yellow: "#EC942C",
+        primary_white: "#FFFFFF",
+        secondary_white: "#F0FAFF",
       },
     },
   },
