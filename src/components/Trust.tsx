@@ -52,7 +52,7 @@ const Trust: React.FC = () => {
                         }),
                       ]}
                     
-                    className="w-[700px] h-auto rounded-lg"
+                    className="w-[600px] h-auto rounded-lg"
                 >
                     <CarouselContent>
                         <CarouselItem>
