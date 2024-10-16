@@ -8,14 +8,14 @@ import search from "@/public/search_icon.svg"
 
 const Departments = () => {
   return (
-    <div className="bg-secondary_white px-[72px] pb-[90px] flex flex-col items-center justify-center gap-5">
+    <div className="bg-secondary_white px-[72px] pb-[90px] flex flex-col items-center justify-center">
         {/* Heading and body */}
-        <div className="mt-[230px] flex flex-row h-[212px] w-[1170px]">
+        <div className="mt-[230px] flex flex-row items-center justify-center h-[212px] w-[1170px]">
             <div className="w-[150px] h-full">
-                <Image src={icon1} alt="icon1" />
+                <Image src={icon1} alt="icon1" /> 
                 <Image src={icon2} alt="icon2" />
             </div>
-            <div className="h-full w-[824px] flex flex-col items-center justify-center align-middle font-semibold">
+            <div className="h-full w-[824px] flex flex-col items-center justify-center text-center font-semibold">
                 <p className="text-[56px] text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
                 <p className="text-[14px] text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
             </div>
