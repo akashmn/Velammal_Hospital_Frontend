@@ -11,8 +11,8 @@ const HeroSection: React.FC = () => {
       <div className="z-0 flex flex-row-reverse">
         <Image src={hero2} alt="hero-image"/>
       </div>
-      <div className="z-10 -mt-[700px] h-auto w-[1146px] flex flex-col gap-[50px]">
-        <div className="flex flex-col">
+      <div className="z-10 -mt-[810px] h-[764px] w-[1146px] flex flex-col gap-[50px] bg-gradient-to-r from-white to-transparent via-[rgba(255,255,255,0.82)]">
+        <div className="flex flex-col mt-[100px]">
             <p className="text-[62px] font-semibold leading-[120%] tracking-[-1.24px] text-[#011632] capitalize">Healthcare you can trust</p>
             <Image src={underline} alt="hero_underline" className="ml-[340px]"></Image>
         </div>
