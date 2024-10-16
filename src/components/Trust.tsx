@@ -5,6 +5,8 @@ import underline from "@/public/hero_underline.png";
 import body_image from "@/public/Vector.svg";
 
 import image1 from "@/public/trust_carousel_image1.svg";
+// import clip from "@/public/trust_video_clip.mp4";
+import icon from '@/public/arrow_up_right.png'
 
 //shadcn 
 import {
@@ -67,6 +69,32 @@ const Trust: React.FC = () => {
                     </CarouselContent>
                 </Carousel>
         </div>
+
+        {/* animated pics */}
+        <div className="">
+
+        </div>
+
+        {/* video clip */}
+        <video src="public/trust_video_clip.mp4" autoPlay muted loop className="bg-red-700 w-[1062px] h-[452px]"></video>
+
+        {/* Trust Ending section */}
+        <div className="flex flex-col items-center justify-center gap-[25px] h-auto w-[1228px]">
+            <div className="flex flex-col items-center">
+                <p className="text-dark_text_blue text-center font-[600] text-[56px] leading-[70px] capitalize">Building trust through care</p>
+                <Image src={underline} alt="underline" className=""></Image>
+            </div>
+            
+            <p className="text-body_text_white text-center font-[500] text-[20px] leading-[31px] tracking-[0.3px] self-stretch">
+            From life-saving treatments to everyday medical care, Velammal Hospital’s journey has always been about trust. Real stories of care, compassion, and cutting-edge healthcare delivered to every corner of South Tamil Nadu. Experience the values that make us more than just a hospital – we are a partner in your health and well-being.
+            </p>
+
+            <button className="w-auto h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                <p className="text-[16px] text-white font-semibold">Watch Playlist</p>
+                <Image src={icon} alt="arrow up right"></Image>
+            </button>
+        </div>
+        
     </div>
   );
 };
