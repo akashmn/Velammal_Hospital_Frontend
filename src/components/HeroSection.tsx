@@ -5,13 +5,16 @@ import underline from '@/public/hero_underline.png'
 import calling from '@/public/Calling.png'
 import icon from '@/public/arrow_up_right.png'
 
+import i1 from '@/public/consult_online.png'
+
 const HeroSection: React.FC = () => {
   return (
-    <div className="flex flex-col ml-[104px]">
-      <div className="z-0 flex flex-row-reverse">
+    <div className="h-auto">
+    <div className="z-0 flex flex-col ml-[104px]">
+      <div className="z-1 flex flex-row-reverse">
         <Image src={hero2} alt="hero-image"/>
       </div>
-      <div className="z-10 -mt-[810px] h-[764px] w-[1146px] flex flex-col gap-[50px] bg-gradient-to-r from-white to-transparent via-[rgba(255,255,255,0.82)]">
+      <div className="z-2 -mt-[810px] h-[764px] w-[1146px] flex flex-col gap-[50px] bg-gradient-to-r from-white to-transparent via-[rgba(255,255,255,0.82)]">
         <div className="flex flex-col mt-[100px]">
             <p className="text-[62px] font-semibold leading-[120%] tracking-[-1.24px] text-[#011632] capitalize">Healthcare you can trust</p>
             <Image src={underline} alt="hero_underline" className="ml-[340px]"></Image>
@@ -34,6 +37,31 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
+        </div>
+
+        {/* hero cards */}
+        <div className="z-10 -mt-[175px] w-[1270px] h-[172px] flex flex-row items-center gap-[10px] justify-center">
+            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
+                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
+                <p className="text-[14px] font-semibold">Consult Online</p>
+            </div>
+            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
+                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
+                <p className="text-[14px] font-semibold">Consult Online</p>
+            </div>
+            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
+                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
+                <p className="text-[14px] font-semibold">Consult Online</p>
+            </div>
+            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
+                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
+                <p className="text-[14px] font-semibold">Consult Online</p>
+            </div>
+            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
+                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
+                <p className="text-[14px] font-semibold">Consult Online</p>
+            </div>
+        </div>
     </div>
   );
 };
