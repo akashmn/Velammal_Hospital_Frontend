@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <div className='flex flex-row w-full h-[90px] p-[20px_25px] gap-[70px] items-center justify-start flex-shrink-0 bg-secondary_white text-sm rounded-b-lg'>
+        <div className='z-10 top-0 sticky drop-shadow-2xl flex flex-row w-full h-[90px] p-[20px_25px] gap-[70px] items-center justify-start flex-shrink-0 bg-secondary_white text-sm rounded-b-lg'>
             <Image src={logo} alt='' className='w-[164.842px] h-[58px]'></Image>
             <div className='flex flex-row items-center justify-around gap-[100px]'>
             {Navbar_data.map((link, index) => (

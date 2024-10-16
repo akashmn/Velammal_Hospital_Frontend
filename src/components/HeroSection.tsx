@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* hero cards */}
-        <div className="z-10 -mt-[175px] w-[1270px] h-[172px] flex flex-row items-center gap-[10px] justify-center">
+        <div className="z-5 -mt-[175px] w-[1270px] h-[172px] flex flex-row items-center gap-[10px] justify-center">
             <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
                 <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
                 <p className="text-[14px] font-semibold">Consult Online</p>
