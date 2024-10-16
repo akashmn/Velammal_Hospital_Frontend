@@ -12,8 +12,11 @@ const HeroSection: React.FC = () => {
         <Image src={hero2} alt="hero-image"/>
       </div>
       <div className="z-10 -mt-[700px] h-auto w-[1146px] flex flex-col gap-[50px]">
-        <p className="text-[62px] font-semibold leading-[120%] tracking-[-1.24px] text-[#011632] capitalize">Healthcare you can trust</p>
-        <div>
+        <div className="flex flex-col">
+            <p className="text-[62px] font-semibold leading-[120%] tracking-[-1.24px] text-[#011632] capitalize">Healthcare you can trust</p>
+            <Image src={underline} alt="hero_underline" className="ml-[340px]"></Image>
+        </div>
+        <div className="">
             <p className="text-[40px] font-semibold leading-[155%] tracking-[0.3px]">Your health, our priority</p>
             <p className="mt-[30px] text-[#3C4959] font-medium leading-[155%] tracking-[0.3px]">Experience advanced, compassionate medical services from Tamil <br /> Nadu’s leading multispecialty hospital. Offering 24/7 Expert  Medical <br /> care with a commitment to excellence</p>
             <div className="mt-[30px] flex flex-row gap-10">
