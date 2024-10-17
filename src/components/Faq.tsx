@@ -21,7 +21,7 @@ import underline from '@/public/faq_underline.svg'
         <Accordion 
             type="single" 
             collapsible 
-            className="w-[630px]">
+            className="w-[630px] flex flex-col items-center justify-center gap-[28px]">
             <AccordionItem 
                 value="item-1"
                 className="w-full h-auto px-[36px]">
