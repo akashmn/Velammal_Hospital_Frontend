@@ -1,4 +1,5 @@
 import Departments from "@/components/Departments";
+import { AccordionDemo } from "@/components/Faq";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -14,6 +15,7 @@ export default function Home() {
       <Departments/>
       <Trust/>
       <Network/>
+      <AccordionDemo/>
     </div>
   );
 }
