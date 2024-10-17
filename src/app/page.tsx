@@ -1,4 +1,5 @@
 import Departments from "@/components/Departments";
+import Experts from "@/components/Experts";
 import { AccordionDemo } from "@/components/Faq";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <Departments/>
       <Trust/>
       <Network/>
+      <Experts/>
       <AccordionDemo/>
     </div>
   );

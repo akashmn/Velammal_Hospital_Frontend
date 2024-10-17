@@ -5,7 +5,7 @@ import network_image from '@/public/network_velammal_image.svg'
 
 const Network = () => {
   return (
-    <div className='h-auto w-full px-[80px] py-[82px] flex flex-col items-center justify-center gap-[87px]'>
+    <div className='bg-secondary_white h-auto w-full px-[80px] py-[82px] flex flex-col items-center justify-center gap-[87px]'>
         <div className='flex flex-col items-center justify-center gap-[80px]'>
             {/* heading & underline */}
             <div className='flex flex-col items-center justify-center w-[1290px] gap-5'>
