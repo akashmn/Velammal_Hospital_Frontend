@@ -2,6 +2,7 @@ import Departments from "@/components/Departments";
 import Experts from "@/components/Experts";
 import { AccordionDemo } from "@/components/Faq";
 import Header from "@/components/Header";
+import HelpDesk from "@/components/HelpDesk";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Network from "@/components/Network";
@@ -17,6 +18,7 @@ export default function Home() {
       <Trust/>
       <Network/>
       <Experts/>
+      <HelpDesk/>
       <AccordionDemo/>
     </div>
   );
