@@ -4,10 +4,20 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+
+import Image from 'next/image'
+import underline from '@/public/faq_underline.svg'
   
   export function AccordionDemo() {
     return (
-      <div className="flex flex-col items-center justify-center pb-[70px]">
+      <div className="flex flex-col items-center justify-center py-[70px] gap-[54px]">
+        <div className="flex flex-col items-center justify-center text-center gap-[20px]">
+            <div className="flex flex-col items-center justify-center">
+                <p className="text-dark_text_blue text-center font-[600] text-[42px] leading-[52.5px] capitalize">Frequently Ask Question</p>
+                <Image src={underline} alt="underline"></Image>
+            </div>
+            <p className="text-body_text_white text-center font-[500] text-[20px] leading-[31px] tracking-[0.3px]">Quality Care Explained: FAQs About Our Standards and Services</p>
+        </div>
         <Accordion 
             type="single" 
             collapsible 
