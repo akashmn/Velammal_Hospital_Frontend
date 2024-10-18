@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import hero2 from '@/public/hero_image2.png'
 import underline from '@/public/hero_underline.png'
 import calling from '@/public/Calling.png'
