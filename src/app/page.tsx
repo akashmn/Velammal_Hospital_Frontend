@@ -9,6 +9,7 @@ import HelpDesk from "@/components/HelpDesk";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Network from "@/components/Network";
+import News_Articles from "@/components/News_Articles";
 import Trust from "@/components/Trust";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Experts/>
       <HelpDesk/>
       <EmergencyCare/>
+      <News_Articles/>
       <AccordionDemo/>
       <Footer_links/>
       <Footer/>
