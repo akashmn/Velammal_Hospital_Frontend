@@ -2,6 +2,7 @@ import Departments from "@/components/Departments";
 import EmergencyCare from "@/components/EmergencyCare";
 import Experts from "@/components/Experts";
 import { AccordionDemo } from "@/components/Faq";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HelpDesk from "@/components/HelpDesk";
 import HeroSection from "@/components/HeroSection";
@@ -22,6 +23,7 @@ export default function Home() {
       <HelpDesk/>
       <EmergencyCare/>
       <AccordionDemo/>
+      <Footer/>
     </div>
   );
 }
