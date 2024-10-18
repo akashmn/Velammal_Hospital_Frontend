@@ -30,25 +30,23 @@ const Departments = () => {
 
         {/* Search bar */}
         <div className="flex flex-row items-center justify-center gap-5">
-            <input type="text" placeholder="Search departments" className="w-[400px] h-[56px] border-4 border-primary_blue rounded-full p-[32px]"/>
-            <Image src={search} alt="seach icon" height={24} width={24} className="-ml-20"></Image>
+            <input type="text" placeholder="Search departments" className="md:w-[400px] w-[290px] md:h-[56px] h-[20px] border-4 border-primary_blue rounded-full md:p-[32px] p-[20px]"/>
+            <Image src={search} alt="seach icon" height={24} width={24} className="md:-ml-20 -ml-16"></Image>
         </div>
 
         {/* Department cards */}
-        <div className="h-auto w-[1440px] grid grid-cols-6 px-72 gap-[40px]">
+        <div className="h-auto md:w-[1440px] w-[900px] grid md:grid-cols-6 grid-cols-3 px-72 md:gap-[40px] gap-[20px]">
         {departments.map((department, index) => (
           <div
             key={index}
-            className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300"
+            className="md:h-[118.55px] md:w-[144px] w-[100px] h-[100px] bg-white px-[23px] flex-col flex items-center justify-center gap-2 text-center rounded-xl hover:drop-shadow-2xl duration-300"
           >
             <Image
               src={department.icon}
               alt={department.name}
-              height={40}
-              width={40}
-              className="bg-primary_blue p-2 rounded-full"
+              className="bg-primary_blue h-[30px] w-[30px] p-2 rounded-full"
             />
-            <p className="text-[16px] font-semibold">{department.name}</p>
+            <p className="md:text-[16px] text-[12px] font-semibold">{department.name}</p>
           </div>
         ))}
       </div>
