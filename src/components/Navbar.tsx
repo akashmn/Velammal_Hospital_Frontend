@@ -9,7 +9,7 @@ import logo from '@/public/Healing_touch_Logo.png'
 import Navbar_data from '@/json/Navbar_data';
 
 const Navbar: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);   // This is the state of the navbar menu (open or closed)
+    // const [isOpen, setIsOpen] = useState(false);   // This is the state of the navbar menu (open or closed)
     const [activeLink, setActiveLink] = useState<string>('/'); // This is the active link that is clicked on the navbar menu
 
     const handleLinkClick = (href: string) => {
