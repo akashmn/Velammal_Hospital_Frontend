@@ -8,6 +8,8 @@ import header_data from '@/json/Header_data';
 import Link from 'next/link';
 import underline from "@/public/footer_links_underline.svg"
 
+import icon from "@/public/arrow_up_right.png"
+
 
 const Footer_links = () => {
   return (
@@ -207,10 +209,10 @@ const Footer_links = () => {
             </div>
 
             {/* contact us */}
-            <div>
-            <div className="flex flex-col -ml-[100px] gap-[14px]">
+            <div className="flex flex-col gap-[600px]">
+                <div className="flex flex-col -ml-[100px] gap-[14px]">
                     <div className="flex flex-col gap-3">
-                        <p className="h-[21px] w-[121px] text-[20px] normal-case leading-[25px]">Patent Core</p>
+                        <p className="h-[21px] w-[121px] text-[20px] normal-case leading-[25px]">Contact</p>
                         <Image src={underline} alt="underline"></Image>
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
@@ -219,6 +221,17 @@ const Footer_links = () => {
                         <Link href="/">Find A Doctor</Link>
                         <Link href="/">Find A Doctor</Link>
                     </div>
+                </div>
+                <div className="flex flex-col gap-[30px] -ml-[100px]">
+                    <button className="w-auto h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                        <p className="text-[14px] text-white font-semibold">Book an appointment</p>
+                        <Image src={icon} alt="arrow up right"></Image>
+                    </button>
+
+                    <button className="w-auto h-[60px] py-[12px] px-[20px] bg-white flex flex-row items-center justify-center rounded-full gap-[15px]">
+                        <p className="text-[14px] font-semibold text-black">Book Health Check-up</p>
+                        <Image src={icon} alt="arrow up right" className="bg-primary_blue"></Image>
+                    </button>
                 </div>
             </div>
         </div>
