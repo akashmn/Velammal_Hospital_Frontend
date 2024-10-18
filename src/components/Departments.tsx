@@ -6,8 +6,8 @@ import services from "@/public/icon3.svg"
 import checkup from "@/public/icon4.svg"
 
 import search from "@/public/search_icon.svg"
-import breast_endocrine from "@/public/breast_endocrine_icon.svg"
 
+import departments from "@/json/Departments"
 
 const Departments = () => {
   return (
@@ -33,58 +33,25 @@ const Departments = () => {
             <input type="text" placeholder="Search departments" className="w-[400px] h-[56px] border-4 border-primary_blue rounded-full p-[32px]"/>
             <Image src={search} alt="seach icon" height={24} width={24} className="-ml-20"></Image>
         </div>
-        {/* Department cards */}
 
-        <div className="h-auto w-[1440px] grid grid-cols-6 px-72 gap-[35px]">
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-            <div className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                <Image src={breast_endocrine} alt="breast_endocrine" height={40} width={40} className="bg-primary_blue p-2 rounded-full"></Image>
-                <p className="text-[16px] font-semibold">Breast & Endocrine</p>
-            </div>
-        </div>
+        {/* Department cards */}
+        <div className="h-auto w-[1440px] grid grid-cols-6 px-72 gap-[40px]">
+        {departments.map((department, index) => (
+          <div
+            key={index}
+            className="h-[118.55px] w-[144px] bg-white px-[23px] flex-col flex items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300"
+          >
+            <Image
+              src={department.icon}
+              alt={department.name}
+              height={40}
+              width={40}
+              className="bg-primary_blue p-2 rounded-full"
+            />
+            <p className="text-[16px] font-semibold">{department.name}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
