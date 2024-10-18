@@ -1,8 +1,10 @@
 import Image from "next/image"
-import icon1 from "@/public/icon1.svg"
-import icon2 from "@/public/icon2.svg"
-import icon3 from "@/public/icon3.svg"
-import icon4 from "@/public/icon3.svg"
+
+import health from "@/public/icon1.svg"
+import accessibility from "@/public/icon2.svg"
+import services from "@/public/icon3.svg"
+import checkup from "@/public/icon4.svg"
+
 import search from "@/public/search_icon.svg"
 import breast_endocrine from "@/public/breast_endocrine_icon.svg"
 
@@ -12,22 +14,22 @@ const Departments = () => {
     <div className="bg-secondary_white px-[72px] pb-[90px] flex flex-col items-center justify-center gap-[80px]">
         {/* Heading and body */}
         <div className="mt-[230px] flex flex-row items-center justify-center h-[212px] w-[1170px]">
-            <div className="w-[150px] h-full">
-                <Image src={icon1} alt="icon1" /> 
-                <Image src={icon2} alt="icon2" />
+            <div className="w-[150px] flex flex-col gap-[100px] h-full">
+                <Image src={health} alt="icon1" className="md:-ml-[100px]"/> 
+                <Image src={accessibility} alt="icon2" className="md:-mb-[100px]"/>
             </div>
-            <div className="h-full w-[824px] flex flex-col items-center justify-center text-center font-semibold">
-                <p className="text-[56px] text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
-                <p className="text-[14px] text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
+            <div className="h-full w-[824px] gap-[40px] flex flex-col items-center justify-center text-center font-semibold">
+                <p className="text-[56px] font-semibold leading-[61.6px] capitalize text-center text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
+                <p className="text-[20px] font-medium leading-[24px] capitalize text-center text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
             </div>
-            <div className="w-[150px] h-full flex flex-col">
-                <Image src={icon3} alt="icon3"/>
-                <Image src={icon4} alt="icon4"/>
+            <div className="w-[150px] h-full flex flex-col gap-[100px]">
+                <Image src={checkup} alt="icon3" className="md:ml-[100px]"/>
+                <Image src={services} alt="icon4" className="md:-mb-[100px]"/>
             </div>
         </div>
 
         {/* Search bar */}
-        <div className="mt-[100px] flex flex-row items-center justify-center gap-5">
+        <div className="flex flex-row items-center justify-center gap-5">
             <input type="text" placeholder="Search departments" className="w-[400px] h-[56px] border-4 border-primary_blue rounded-full p-[32px]"/>
             <Image src={search} alt="seach icon" height={24} width={24} className="-ml-20"></Image>
         </div>
