@@ -44,7 +44,7 @@ const News_Articles = () => {
 
                 {/*tag, heading and body */}
                 <div className='flex flex-col gap-[5px]'>
-                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='bg-dark_text_blue text-white h-[35px] w-[130px] text-center px-[13px] py-[5px] rounded-xl'>Cardiology</p>
                     <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
                     <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
                 </div>
@@ -55,7 +55,7 @@ const News_Articles = () => {
 
                 {/*tag, heading and body */}
                 <div className='flex flex-col gap-[5px]'>
-                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='bg-dark_text_blue text-white h-[35px] w-[130px] text-center px-[13px] py-[5px] rounded-xl'>Cardiology</p>
                     <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
                     <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
                 </div>
@@ -66,7 +66,7 @@ const News_Articles = () => {
 
                 {/*tag, heading and body */}
                 <div className='flex flex-col gap-[5px]'>
-                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='bg-dark_text_blue text-white h-[35px] w-[130px] text-center px-[13px] py-[5px] rounded-xl'>Cardiology</p>
                     <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
                     <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
                 </div>
@@ -77,7 +77,7 @@ const News_Articles = () => {
 
                 {/*tag, heading and body */}
                 <div className='flex flex-col gap-[5px]'>
-                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='bg-dark_text_blue text-white h-[35px] w-[130px] text-center px-[13px] py-[5px] rounded-xl'>Cardiology</p>
                     <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
                     <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
                 </div>
