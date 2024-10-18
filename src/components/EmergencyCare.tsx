@@ -1,12 +1,30 @@
+"use client"
+
 import Image from 'next/image'
 import icon from "@/public/24_7.svg"
 
 import calling_icon from "@/public/emergency_caller.svg"
 import ambulance from "@/public/ambulance.svg"
 
+import image1 from "@/public/emergency_care_image.svg";
+
+//shadcn 
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+  } from "@/components/ui/carousel"
+
+  import Autoplay from "embla-carousel-autoplay"
+
+
+
+
 const EmergencyCare = () => {
   return (
-    <div className='bg-dark_text_blue w-full h-[900px]'>
+    <div className='bg-dark_text_blue w-full h-[900px] flex flex-row items-center justify-between'>
         {/* Emergency body and icons and button */}
 
         {/* heading and body */}
@@ -58,8 +76,30 @@ const EmergencyCare = () => {
 
 
         {/* carousel */}
-        <div className="w-1/2">
-            
+        <div className="w-1/2 h-[900px]">
+
+        <Carousel
+                    plugins={[
+                        Autoplay({
+                          delay: 3000,
+                        }),
+                      ]}
+                    
+                    className="w-[full] h-full"
+                >
+                    <CarouselContent>
+                        <CarouselItem>
+                            <Image src={image1} alt="image1"></Image>
+                        </CarouselItem>
+                        <CarouselItem>
+                            <Image src={image1} alt="image1"></Image>
+                        </CarouselItem>
+                        <CarouselItem>
+                            <Image src={image1} alt="image1"></Image>
+                        </CarouselItem>
+                    </CarouselContent>
+                </Carousel>
+
         </div>
     </div>
   )
