@@ -3,7 +3,7 @@ import underline from '@/public/helpdesk_underline.svg'
 import trust_image from '@/public/trust_image.svg'
 import online_consultation from '@/public/online_consultation.svg'
 
-import icon from "@/public/Calling.png"
+import calling_icon from "@/public/Calling.png"
 
 const HelpDesk = () => {
   return (
@@ -56,7 +56,7 @@ const HelpDesk = () => {
                 </div>
                 <button className="w-[300px] h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-evenly rounded-full gap-[15px]">
                     <p className="text-[14px] text-white font-semibold">International help Desk</p>
-                    <Image src={icon} alt="arrow up right" className='bg-white rounded-full p-1'></Image>
+                    <Image src={calling_icon} alt="arrow up right" className='bg-white rounded-full p-1'></Image>
                 </button>
             </div>
         </div>
