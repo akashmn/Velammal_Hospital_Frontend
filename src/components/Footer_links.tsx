@@ -152,7 +152,7 @@ const Footer_links = () => {
 
             {/* cooperate, academic and medical procedures */}
             <div>
-            <div className="flex-col flex gap-[36px]">
+            <div className="flex-col flex gap-[36px] -ml-[50px]">
                 {/* Coperate */}
                 <div className="flex flex-col gap-[14px]">
                     <div className="flex flex-col gap-3">
@@ -208,7 +208,7 @@ const Footer_links = () => {
 
             {/* contact us */}
             <div>
-            <div className="flex flex-col gap-[14px]">
+            <div className="flex flex-col -ml-[100px] gap-[14px]">
                     <div className="flex flex-col gap-3">
                         <p className="h-[21px] w-[121px] text-[20px] normal-case leading-[25px]">Patent Core</p>
                         <Image src={underline} alt="underline"></Image>
