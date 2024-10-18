@@ -8,9 +8,9 @@ import i1 from '@/public/consult_online.png'
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="h-auto">
+    <div className="h-auto flex flex-col items-center justify-center">
     <div className="z-0 flex flex-col ml-[104px]">
-      <div className="z-1 flex flex-row-reverse">
+      <div className="z-1 md:flex md:flex-row-reverse ">
         <Image src={hero2} alt="hero-image"/>
       </div>
       <div className="z-2 -mt-[810px] h-[764px] w-[1146px] flex flex-col gap-[50px] bg-gradient-to-r from-white to-transparent via-[rgba(255,255,255,0.82)]">
@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* hero cards */}
-        <div className="z-5 -mt-[175px] w-[1270px] h-[172px] flex flex-row items-center gap-[10px] justify-center">
+        <div className="md:mx-[100px] md:z-5 -mt-[40px] md:w-[1270px] md:h-[172px] md:flex md:flex-row md:items-center gap-[30px] md:justify-center grid grid-cols-2">
             <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
                 <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
                 <p className="text-[14px] font-semibold">Consult Online</p>
