@@ -1,5 +1,4 @@
 import Image from "next/image";
-import hero1 from '@/public/hero_image1.png'
 import hero2 from '@/public/hero_image2.png'
 import underline from '@/public/hero_underline.png'
 import calling from '@/public/Calling.png'

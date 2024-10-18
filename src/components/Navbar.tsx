@@ -12,11 +12,6 @@ const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);   // This is the state of the navbar menu (open or closed)
     const [activeLink, setActiveLink] = useState<string>('/'); // This is the active link that is clicked on the navbar menu
 
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
     const handleLinkClick = (href: string) => {
         setActiveLink(href);
     };
