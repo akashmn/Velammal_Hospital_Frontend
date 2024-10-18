@@ -5,7 +5,7 @@ import header_data from '@/json/Header_data';
 
 const Header: React.FC = () => {
     return (
-        <div className="h-[25.7px] w-full bg-accent_blue flex flex-row items-center justify-between px-10 text-white">
+        <div className="max-sm:hidden h-[25.7px] w-full bg-accent_blue flex flex-row items-center justify-between px-10 text-white">
             <div className='flex flex-row items-center gap-10'>
                 <div className='flex flex-row gap-5 items-center'>
                 {header_data.map((link, index) => (
