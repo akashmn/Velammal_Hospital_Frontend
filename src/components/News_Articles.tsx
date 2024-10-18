@@ -3,6 +3,7 @@ import icon from '@/public/arrow_up_right.png'
 
 import search from "@/public/search_icon.svg"
 import send_icon from "@/public/send_icon.svg"
+import cardiology_news_article from "@/public/cardiology_news_article.svg"
 
 
 const News_Articles = () => {
@@ -36,6 +37,52 @@ const News_Articles = () => {
         </div>
 
         {/* news articles */}
+        <div className='grid grid-cols-4 gap-[20px] h-auto w-full'>
+            {/* individual news article */}
+            <div className='flex flex-col gap-[20px] w-[305px] h-[452px] bg-secondary_white px-[15px] py-[30px] rounded-[10px]'>
+                <Image src={cardiology_news_article} alt='cardiology_news_article' className='h-[200px] w-full'></Image>
+
+                {/*tag, heading and body */}
+                <div className='flex flex-col gap-[5px]'>
+                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
+                    <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
+                </div>
+            </div>
+
+            <div className='flex flex-col gap-[20px] w-[305px] h-[452px] bg-secondary_white px-[15px] py-[30px] rounded-[10px]'>
+                <Image src={cardiology_news_article} alt='cardiology_news_article' className='h-[200px] w-full'></Image>
+
+                {/*tag, heading and body */}
+                <div className='flex flex-col gap-[5px]'>
+                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
+                    <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
+                </div>
+            </div>
+
+            <div className='flex flex-col gap-[20px] w-[305px] h-[452px] bg-secondary_white px-[15px] py-[30px] rounded-[10px]'>
+                <Image src={cardiology_news_article} alt='cardiology_news_article' className='h-[200px] w-full'></Image>
+
+                {/*tag, heading and body */}
+                <div className='flex flex-col gap-[5px]'>
+                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
+                    <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
+                </div>
+            </div>
+
+            <div className='flex flex-col gap-[20px] w-[305px] h-[452px] bg-secondary_white px-[15px] py-[30px] rounded-[10px]'>
+                <Image src={cardiology_news_article} alt='cardiology_news_article' className='h-[200px] w-full'></Image>
+
+                {/*tag, heading and body */}
+                <div className='flex flex-col gap-[5px]'>
+                    <p className='bg-dark_text_blue text-white px-[13px] py-[5px] rounded-xl'>Cardiology</p>
+                    <p className='w-full text-[18px] font-bold leading-[27.9px] tracking-[0.27px] text-dark_text_blue'>Advanced Heart Care for Over 1 Lakh Patients</p>
+                    <p className='text-[18px] font-medium leading-[27.9px] tracking-[0.27px] font-general-sans text-body_text_white'>Cutting-edge treatments and successful outcomes from the cardiology department</p>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
