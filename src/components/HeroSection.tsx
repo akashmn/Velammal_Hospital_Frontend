@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import hero2 from '@/public/hero_image2.png'
 import underline from '@/public/hero_underline.png'
 import calling from '@/public/Calling.png'
 import icon from '@/public/arrow_up_right.png'
 
-import i1 from '@/public/consult_online.png'
+import cardItems from '@/json/Hero_cards'
 
 const HeroSection: React.FC = () => {
   return (
@@ -40,27 +40,23 @@ const HeroSection: React.FC = () => {
 
         {/* hero cards */}
         <div className="md:mx-[100px] md:z-5 -mt-[40px] md:w-[1270px] md:h-[172px] md:flex md:flex-row md:items-center gap-[30px] md:justify-center grid grid-cols-2">
-            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
-                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
-                <p className="text-[14px] font-semibold">Consult Online</p>
-            </div>
-            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
-                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
-                <p className="text-[14px] font-semibold">Consult Online</p>
-            </div>
-            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
-                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
-                <p className="text-[14px] font-semibold">Consult Online</p>
-            </div>
-            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
-                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
-                <p className="text-[14px] font-semibold">Consult Online</p>
-            </div>
-            <div className="w-[200px] h-full flex flex-col justify-center items-center bg-white py-[40px] px-[10px] gap-5 rounded-lg drop-shadow-2xl">
-                <Image src={i1} alt="consult_online" height={45} width={45} className="border bg-secondary_blue rounded-full p-2"/>
-                <p className="text-[14px] font-semibold">Consult Online</p>
-            </div>
+      {cardItems.map((item, index) => (
+        <div
+          key={index}
+          className={`w-[200px] ${item.background} h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl`}
+        >
+          <Image
+            src={item.icon}
+            alt={item.title}
+            height={70}
+            width={70}
+            className={`border ${item.background} rounded-full`}
+          />
+          <p className={`text-[14px] ${item.text} font-semibold`}>{item.title}</p>
         </div>
+      ))}
+    </div>
+        
     </div>
   );
 };
