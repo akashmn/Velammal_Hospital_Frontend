@@ -11,16 +11,16 @@ import departments from "@/json/Departments"
 
 const Departments = () => {
   return (
-    <div className="bg-secondary_white px-[72px] pb-[90px] flex flex-col items-center justify-center gap-[80px]">
+    <div className="bg-secondary_white md:px-[72px] pb-[90px] flex flex-col items-center justify-center md:gap-[80px] gap-[40px]">
         {/* Heading and body */}
-        <div className="mt-[230px] flex flex-row items-center justify-center h-[212px] w-[1170px]">
+        <div className="md:mt-[230px] mt-[100px] flex flex-row items-center justify-center h-[212px] md:w-[1170px]">
             <div className="w-[150px] flex flex-col gap-[100px] h-full">
                 <Image src={health} alt="icon1" className="md:-ml-[100px]"/> 
                 <Image src={accessibility} alt="icon2" className="md:-mb-[100px]"/>
             </div>
-            <div className="h-full w-[824px] gap-[40px] flex flex-col items-center justify-center text-center font-semibold">
-                <p className="text-[56px] font-semibold leading-[61.6px] capitalize text-center text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
-                <p className="text-[20px] font-medium leading-[24px] capitalize text-center text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
+            <div className="h-full md:w-[824px] w-[100px] md:gap-[40px] gap-[20px] flex flex-col items-center justify-center text-center font-semibold">
+                <p className="md:text-[56px] text-[25px] w-[300px] md:w-[824px] md:font-semibold font-bold  md:leading-[61.6px] leading-[40px] capitalize text-center text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
+                <p className="md:text-[20px] text-[16px] w-[330px] md:w-full font-medium md:leading-[24px] leading-[20px] capitalize md:text-center text-justify text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
             </div>
             <div className="w-[150px] h-full flex flex-col gap-[100px]">
                 <Image src={checkup} alt="icon3" className="md:ml-[100px]"/>
