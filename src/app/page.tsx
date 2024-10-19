@@ -24,7 +24,7 @@ export default function Home() {
       <Experts/>
       <HelpDesk/>
       <EmergencyCare/>
-      {/* <News_Articles/> */}
+      <News_Articles/>
       <AccordionDemo/>
       {/* <Footer_links/> */}
       {/* <Footer/> */}
