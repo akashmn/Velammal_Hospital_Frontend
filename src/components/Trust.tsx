@@ -20,11 +20,11 @@ import {
 
 const Trust: React.FC = () => {
   return (
-    <div className="h-auto w-full py-[72px] flex flex-col items-center gap-[100px]">
+    <div className="h-auto w-full md:py-[72px] py-[40px] flex flex-col items-center gap-[100px]">
         {/* heading and underline */}
-        <div className="flex flex-col h-[70px] w-[1021px] items-center justify-center">
-            <p className=" text-dark_text_blue text-center font-[600] text-[56px] leading-none">51 Lakh+ Patients Trust Us</p>
-            <Image src={underline} alt="underline"></Image>
+        <div className="flex flex-col md:h-[70px] md:w-[1021px] items-center justify-center">
+            <p className=" text-dark_text_blue text-center md:font-[600] font-bold md:text-[56px] text-[25px] leading-none md:w-full">51 Lakh+ Patients Trust Us</p>
+            <Image src={underline} alt="underline" className="h-[5px] w-[200px]"></Image>
         </div>
 
         {/* body and carousel */}
