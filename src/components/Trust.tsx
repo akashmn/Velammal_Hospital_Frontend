@@ -74,7 +74,7 @@ const Trust: React.FC = () => {
         </div>
 
         {/* video clip */}
-        <video src="public/trust_video_clip.mp4" autoPlay muted loop className="bg-red-700 w-[1062px] h-[452px]"></video>
+        {/* <video src="public/trust_video_clip.mp4" autoPlay muted loop className="bg-red-700 w-[1062px] h-[452px]"></video> */}
 
         {/* Trust Ending section */}
         <div className="flex flex-col items-center justify-center gap-[25px] h-auto w-[1228px]">
