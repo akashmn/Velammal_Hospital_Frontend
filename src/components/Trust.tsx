@@ -28,17 +28,17 @@ const Trust: React.FC = () => {
         </div>
 
         {/* body and carousel */}
-        <div className="flex flex-row items-center justify-center gap-[100px] w-full">
+        <div className="flex md:flex-row flex-col items-center justify-center gap-[100px] w-full">
             {/* body */}
             <div className="flex flex-col h-auto w-[580px] gap-[30px]">
-                <div className="flex flex-row gap-[25px]">
+                <div className="flex md:flex-row flex-col items-center gap-[25px]">
                     <Image src={body_image} alt="body_image"></Image>
                     <div className="flex flex-col w-[238px] gap-[10px]">
-                        <p className="text-dark_text_blue font-[600] text-[20px] w-full leading-normal">Healthcare with Integrity</p>
-                        <p className="text-body_text_white font-[500] text-[15px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
+                        <p className="text-dark_text_blue md:font-[600] font-bold md:text-[20px] text-[16px] w-full leading-normal">Healthcare with Integrity</p>
+                        <p className="text-body_text_white font-[500] md:text-[15px] text-[12px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
                     </div>
                 </div>
-                <p className="text-body_text_white text-justify font-[500] text-[18px] leading-normal">
+                <p className="text-body_text_white text-justify font-[500] md:text-[18px] text-[14px] leading-normal md:px-[0] px-[125px]">
                 With over 51 lakh patients treated, Velammal Hospital stands as a beacon of healthcare excellence, offering world-class medical facilities, advanced technologies, and personalized care. Spanning 20 Lakhs square feet, Velammal Hospital is equipped with 2100 beds, 21 state-of-the-art operation theaters, 55 dialysis units, and specialized ICUs. Our modern facilities at Velammal Hospital Madurai combined with a dedicated team of over 450 doctors and 1100 nurses, ensure that every patient receives the highest quality care. <br /><br />
                     From our neonatal ICU to our trusted transplant program, Velammal Hospital combines modern medical technology with compassionate care, serving millions with unmatched expertise.
                     </p>
