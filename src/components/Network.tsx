@@ -57,10 +57,10 @@ const Network = () => {
             </div>
 
             {/* image and body */}
-            <div className='flex flex-col md:w-[510px] items-center justify-center md:-mt-4 px-[10px]'>
+            <div className='flex flex-col md:w-[510px] items-center justify-start md:-mt-4 px-[10px] md:gap-5 gap-[25px]'>
                 <Image src={network_image} alt='network_image' className='md:w-[510px] w-[340px] h-[350px]'></Image>
-                <p className='text-dark_text_blue font-[600] text-[24px] leading-[32px]'>Velammal Medical College hospital and Research Institute, Madurai</p>
-                <p className='text-body_text_white font-[400] text-[19px] leading-[26px]'>Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
+                <p className='text-dark_text_blue font-[600] md:text-[24px] text-[17px] md:p-0 px-7 text md:leading-[32px] leading-[20px] text-center md:text-justify'>Velammal Medical College hospital and Research Institute, Madurai</p>
+                <p className='text-body_text_white font-[400] md:text-[19px] text-[14px] md:leading-[26px] md:px-0 px-[50px] text-justify'>Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
             </div>
 
 
