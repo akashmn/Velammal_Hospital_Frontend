@@ -21,39 +21,44 @@ const Network = () => {
         </div>
 
         {/* links and body */}
-        <div className='flex flex-row justify-between gap-[100px]'>
+        <div className='flex md:flex-row flex-col justify-between gap-[100px]'>
 
             {/* redirecting links */}
-            <div className='flex flex-col gap-[29px]'>
-                <button className="w-auto h-[60px] py-[12px] px-[20px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
-                    <p className="text-[20px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
+            <div className='flex flex-col gap-[29px] items-center px-[50px]'>
+                <button className="md:w-auto w-[340px] md:h-[60px] md:py-[12px] md:px-[20px] py-[10px] px-[10px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                    <p className="md:text-[20px] text-[14px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
                     <Image src={icon} alt="arrow up right"></Image>
                 </button>
-                <button className="w-auto h-[60px] py-[12px] px-[20px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
-                    <p className="text-[20px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
+
+                <button className="md:w-auto w-[340px] md:h-[60px] md:py-[12px] md:px-[20px] py-[10px] px-[10px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                    <p className="md:text-[20px] text-[14px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
                     <Image src={icon} alt="arrow up right"></Image>
                 </button>
-                <button className="w-auto h-[60px] py-[12px] px-[20px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
-                    <p className="text-[20px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
+
+                <button className="md:w-auto w-[340px] md:h-[60px] md:py-[12px] md:px-[20px] py-[10px] px-[10px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                    <p className="md:text-[20px] text-[14px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
                     <Image src={icon} alt="arrow up right"></Image>
                 </button>
-                <button className="w-auto h-[60px] py-[12px] px-[20px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
-                    <p className="text-[20px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
+
+                <button className="md:w-auto w-[340px] md:h-[60px] md:py-[12px] md:px-[20px] py-[10px] px-[10px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                    <p className="md:text-[20px] text-[14px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
                     <Image src={icon} alt="arrow up right"></Image>
                 </button>
-                <button className="w-auto h-[60px] py-[12px] px-[20px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
-                    <p className="text-[20px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
+
+                <button className="md:w-auto w-[340px] md:h-[60px] md:py-[12px] md:px-[20px] py-[10px] px-[10px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                    <p className="md:text-[20px] text-[14px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
                     <Image src={icon} alt="arrow up right"></Image>
                 </button>
-                <button className="w-auto h-[60px] py-[12px] px-[20px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
-                    <p className="text-[20px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
+
+                <button className="md:w-auto w-[340px] md:h-[60px] md:py-[12px] md:px-[20px] py-[10px] px-[10px] border-2 border-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+                    <p className="md:text-[20px] text-[14px] text-dark_text_blue">Velammal Medical College hospital and Research Institute</p>
                     <Image src={icon} alt="arrow up right"></Image>
-                </button> 
+                </button>
             </div>
 
             {/* image and body */}
-            <div className='flex flex-col w-[510px] -mt-4'>
-                <Image src={network_image} alt='network_image' className='w-[510px] h-[350px]'></Image>
+            <div className='flex flex-col md:w-[510px] items-center justify-center md:-mt-4 px-[10px]'>
+                <Image src={network_image} alt='network_image' className='md:w-[510px] w-[340px] h-[350px]'></Image>
                 <p className='text-dark_text_blue font-[600] text-[24px] leading-[32px]'>Velammal Medical College hospital and Research Institute, Madurai</p>
                 <p className='text-body_text_white font-[400] text-[19px] leading-[26px]'>Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
             </div>
