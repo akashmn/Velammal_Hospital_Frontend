@@ -15,19 +15,19 @@ import Trust from "@/components/Trust";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <Header/>
-      <Navbar/>
+      {/* <Header/> */}
+      {/* <Navbar/> */}
       <HeroSection/>
       <Departments/>
       <Trust/>
       <Network/>
-      <Experts/>
-      <HelpDesk/>
-      <EmergencyCare/>
-      <News_Articles/>
-      <AccordionDemo/>
-      <Footer_links/>
-      <Footer/>
+      {/* <Experts/> */}
+      {/* <HelpDesk/> */}
+      {/* <EmergencyCare/> */}
+      {/* <News_Articles/> */}
+      {/* <AccordionDemo/> */}
+      {/* <Footer_links/> */}
+      {/* <Footer/> */}
     </div>
   );
 }
