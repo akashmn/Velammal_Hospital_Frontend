@@ -20,7 +20,7 @@ import {
 
 const Trust: React.FC = () => {
   return (
-    <div className="h-auto w-full md:py-[72px] py-[40px] flex flex-col items-center gap-[100px]">
+    <div className="h-auto w-full md:py-[72px] py-[40px] flex flex-col items-center md:gap-[100px] gap-[50px]">
         {/* heading and underline */}
         <div className="flex flex-col md:h-[70px] md:w-[1021px] items-center justify-center">
             <p className=" text-dark_text_blue text-center md:font-[600] font-bold md:text-[56px] text-[25px] leading-none md:w-full">51 Lakh+ Patients Trust Us</p>
@@ -38,8 +38,8 @@ const Trust: React.FC = () => {
                         <p className="text-body_text_white font-[500] md:text-[15px] text-[12px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
                     </div>
                 </div>
-                <p className="text-body_text_white text-justify font-[500] md:text-[18px] text-[14px] leading-normal md:px-[20px] px-[125px]">
-                With over 51 lakh patients treated, Velammal Hospital stands as a beacon of healthcare excellence, offering world-class medical facilities, advanced technologies, and personalized care. Spanning 20 Lakhs square feet, Velammal Hospital is equipped with 2100 beds, 21 state-of-the-art operation theaters, 55 dialysis units, and specialized ICUs. Our modern facilities at Velammal Hospital Madurai combined with a dedicated team of over 450 doctors and 1100 nurses, ensure that every patient receives the highest quality care. <br /><br />
+                <p className="text-body_text_white text-justify font-[500] md:text-[18px] text-[15px] leading-normal md:px-[20px] px-[125px]">
+                With over 51 lakh patients treated, Velammal Hospital stands as a beacon of healthcare excellence, offering world-class medical facilities, advanced technologies, and personalized care. Spanning 20 Lakhs square feet, Velammal Hospital is equipped with 2100 beds, 21 state-of-the-art operation theaters, 55 dialysis units, and specialized ICUs. Our modern facilities at Velammal Hospital Madurai combined with a dedicated team of over 450 doctors and 1100 nurses, ensure that every patient receives the highest quality care. <br/><br />
                     From our neonatal ICU to our trusted transplant program, Velammal Hospital combines modern medical technology with compassionate care, serving millions with unmatched expertise.
                 </p>
                 </div>
@@ -77,13 +77,13 @@ const Trust: React.FC = () => {
         {/* <video src="public/trust_video_clip.mp4" autoPlay muted loop className="bg-red-700 w-[1062px] h-[452px]"></video> */}
 
         {/* Trust Ending section */}
-        <div className="flex flex-col items-center justify-center gap-[25px] h-auto w-[1228px]">
+        <div className="flex flex-col items-center justify-center gap-[25px] h-auto md:w-[1228px]">
             <div className="flex flex-col items-center">
-                <p className="text-dark_text_blue text-center font-[600] text-[56px] leading-[70px] capitalize">Building trust through care</p>
-                <Image src={underline} alt="underline" className=""></Image>
+                <p className="text-dark_text_blue text-center font-[600] md:text-[56px] text-[44px] md:leading-[70px] leading-[50px] capitalize">Building trust through care</p>
+                <Image src={underline} alt="underline" className="h-2 w-[200px]"></Image>
             </div>
             
-            <p className="text-body_text_white text-center font-[500] text-[20px] leading-[31px] tracking-[0.3px] self-stretch">
+            <p className="text-body_text_white md:text-center text-justify font-[500] md:text-[20px] text-[15px] md:leading-[31px] tracking-[0.3px] self-stretch px-[15px]">
             From life-saving treatments to everyday medical care, Velammal Hospital’s journey has always been about trust. Real stories of care, compassion, and cutting-edge healthcare delivered to every corner of South Tamil Nadu. Experience the values that make us more than just a hospital – we are a partner in your health and well-being.
             </p>
 
