@@ -38,10 +38,10 @@ const Trust: React.FC = () => {
                         <p className="text-body_text_white font-[500] md:text-[15px] text-[12px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
                     </div>
                 </div>
-                <p className="text-body_text_white text-justify font-[500] md:text-[18px] text-[14px] leading-normal md:px-[0] px-[125px]">
+                <p className="text-body_text_white text-justify font-[500] md:text-[18px] text-[14px] leading-normal md:px-[20px] px-[125px]">
                 With over 51 lakh patients treated, Velammal Hospital stands as a beacon of healthcare excellence, offering world-class medical facilities, advanced technologies, and personalized care. Spanning 20 Lakhs square feet, Velammal Hospital is equipped with 2100 beds, 21 state-of-the-art operation theaters, 55 dialysis units, and specialized ICUs. Our modern facilities at Velammal Hospital Madurai combined with a dedicated team of over 450 doctors and 1100 nurses, ensure that every patient receives the highest quality care. <br /><br />
                     From our neonatal ICU to our trusted transplant program, Velammal Hospital combines modern medical technology with compassionate care, serving millions with unmatched expertise.
-                    </p>
+                </p>
                 </div>
 
                 {/* carousel */}
@@ -52,7 +52,7 @@ const Trust: React.FC = () => {
                         }),
                       ]}
                     
-                    className="w-[600px] h-auto rounded-lg"
+                    className="md:w-[600px] px-[10px] -mt-[50px] md:-mt-0 h-auto rounded-lg"
                 >
                     <CarouselContent>
                         <CarouselItem>
