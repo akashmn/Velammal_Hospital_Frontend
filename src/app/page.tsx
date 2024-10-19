@@ -23,7 +23,7 @@ export default function Home() {
       <Network/>
       <Experts/>
       <HelpDesk/>
-      {/* <EmergencyCare/> */}
+      <EmergencyCare/>
       {/* <News_Articles/> */}
       {/* <AccordionDemo/> */}
       {/* <Footer_links/> */}

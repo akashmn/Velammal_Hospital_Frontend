@@ -25,7 +25,7 @@ const HelpDesk = () => {
             <Image src={trust_image} alt='trust_image' className='w-full max-w-[425px] h-auto'></Image>
 
             {/* cards */}
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-[20px]'>
+            <div className='grid grid-cols-2 md:grid-cols-2 gap-[20px]'>
                 {Array(6).fill(0).map((_, idx) => (
                     <div key={idx} className="h-[118.55px] w-[144px] bg-white px-[23px] flex flex-col items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
                         <Image src={online_consultation} alt="online_consultation" height={40} width={40} className="bg-primary_blue p-2 rounded-full" />
