@@ -5,50 +5,12 @@ import Image from "next/image";
 import underline from "@/public/experts_underline.svg";
 import search from "@/public/search_icon.svg";
 import bg from "@/public/experts_cards_bg.svg";
-import ramprasath from "@/public/experts_cards_dr_ramprasath.svg";
 import arrow from "@/public/experts_cards_arrow.svg";
 import left from "@/public/testimonial_left_arrow.svg";
 import right from "@/public/testimonial_right_arrow.svg";
 
-const doctors = [
-  {
-    name: "Dr. 1",
-    specialization: "Senior Consultant",
-    type: "Cardiothoracic Surgeon",
-    image: ramprasath,
-  },
-  {
-    name: "Dr. 2",
-    specialization: "Senior Consultant",
-    type: "Cardiothoracic Surgeon",
-    image: ramprasath,
-  },
-  {
-    name: "Dr. 3",
-    specialization: "Senior Consultant",
-    type: "Cardiothoracic Surgeon",
-    image: ramprasath,
-  },
-  {
-    name: "Dr. 4",
-    specialization: "Senior Consultant",
-    type: "Cardiothoracic Surgeon",
-    image: ramprasath,
-  },
-  {
-    name: "Dr. 5",
-    specialization: "Senior Consultant",
-    type: "Cardiothoracic Surgeon",
-    image: ramprasath,
-  },
-  {
-    name: "Dr. 6",
-    specialization: "Senior Consultant",
-    type: "Cardiothoracic Surgeon",
-    image: ramprasath,
-  },
-  // Add more doctors as needed
-];
+import doctors from "@/json/Experts_details";
+
 
 const Experts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
