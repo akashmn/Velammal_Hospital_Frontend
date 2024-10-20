@@ -8,10 +8,6 @@ import stars from "@/public/testimonial_review_star.svg";
 import left from "@/public/testimonial_left_arrow.svg";
 import right from "@/public/testimonial_right_arrow.svg";
 
-//slick carousel
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 const testimonialsData = [
   {
     name: "Vidya",
