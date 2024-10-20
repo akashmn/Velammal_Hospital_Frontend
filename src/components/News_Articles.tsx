@@ -26,9 +26,9 @@ const News_Articles = () => {
               <Image src={search} alt="search icon" height={24} width={24} className="-ml-10" />
             </div>
 
-            <button className="w-[200px] md:w-[270px] h-[48px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px]">
+            <button className="w-[200px] md:w-[270px] h-[48px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group">
               <p className="text-[14px] text-white font-semibold">View All</p>
-              <Image className='w-8 h-8' src={icon} alt="arrow up right" />
+              <Image className='w-8 h-8 transition-transform duration-300 ease-in-out group-hover:rotate-45' src={icon} alt="arrow up right" />
             </button>
           </div>
         </div>

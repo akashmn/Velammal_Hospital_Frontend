@@ -22,13 +22,14 @@ const HeroSection: React.FC = () => {
               <p className="text-[20px] md:text-[40px] font-semibold leading-[155%] tracking-[0.3px]">Your health, our priority</p>
               <p className="text-[16px] md:text-[17px] w-[16em] mb-6 md:mb-0 md:w-[35em] mt-[30px] text-[#3C4959] font-medium leading-[155%] tracking-[0.3px]">Experience advanced, compassionate medical services from Tamil Nadu’s leading multispecialty hospital. Offering 24/7 Expert  Medical care with a commitment to excellence</p>
               <div className="md:mt-14 flex flex-col md:flex-row gap-5 md:gap-10 justify-center md:justify-start">
-                <button className="w-[15em] md:w-auto h-[50px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[10px]">
-                  <p className="text-[14px] text-white font-semibold">Book an appointment</p>
-                  <Image className="w-8 h-8" src={icon} alt="arrow up right" />
-                </button>
+              <button className="w-[15em] md:w-auto h-[50px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[10px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group">
+                <p className="text-[14px] text-white font-semibold">Book an appointment</p>
+                <Image className="w-8 h-8 transition-transform duration-300 ease-in-out group-hover:rotate-45" src={icon} alt="arrow up right" />
+              </button>
 
-                <div className="flex flex-row items-start md:items-center justify-start md:justify-start gap-5 md:gap-10">
-                  <Image src={calling} alt="caller-image" className="h-[45px] w-[45px] md:h-[55px] md:w-[55px] rounded-full bg-green-700 border p-[15px] border-primary_blue" />
+
+                <div className="flex flex-row items-start md:items-center justify-start md:justify-start gap-3">
+                  <Image src={calling} alt="caller-image" className="h-[45px] w-[45px] md:h-[55px] md:w-[55px] rounded-full bg-g border p-[15px] border-primary_blue hover:scale-110 hover:bg-[#40c444] transition-all duration-300 hover:rotate-[20deg]" />
                   <div>
                     <p className="text-[14px] text-primary_blue font-semibold">24H Emergency</p>
                     <p className="text-[14px] font-semibold">(0452) 711 3333</p>

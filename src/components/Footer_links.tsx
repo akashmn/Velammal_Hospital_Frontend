@@ -237,14 +237,14 @@ const Footer_links = () => {
                 </div>
 
                 <div className="flex flex-col gap-[20px]">
-                    <button className="md:w-full w-[200px] md:h-[60px] h-[40px] py-[16px] px-[10px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
-                        <p className="md:text-[14px] text-[12px] text-white font-semibold">Book an appointment</p>
-                        <Image src={icon} alt="arrow up right" className="md:h-auto md:w-auto h-[20px] w-[20px]"/>
+                    <button className="md:w-full w-[200px] md:h-[60px] h-[40px] py-[16px] px-[10px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-white">
+                        <p className="md:text-[14px] text-[12px] text-white font-semibold group-hover:text-primary_blue">Book an appointment</p>
+                        <Image src={icon} alt="arrow up right" className="md:h-auto md:w-auto h-[20px] w-[20px] transition-transform duration-300 ease-in-out group-hover:rotate-45"/>
                     </button>
 
-                    <button className="md:w-full w-[200px] md:h-[60px] h-[40px] py-[12px] md:px-[20px] px-[12px] bg-white flex flex-row items-center justify-center rounded-full gap-[15px]">
-                        <p className="md:text-[14px] text-[12px] text-primary_blue font-bold">Book Health Check-up</p>
-                        <Image src={icon} alt="arrow up right" className="md:h-auto md:w-auto h-[20px] w-[20px]"/>
+                    <button className="md:w-full w-[200px] md:h-[60px] h-[40px] py-[12px] md:px-[20px] px-[12px] bg-white flex flex-row items-center justify-center rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-primary_blue">
+                        <p className="md:text-[14px] text-[12px] text-primary_blue font-bold group-hover:text-white">Book Health Check-up</p>
+                        <Image src={icon} alt="arrow up right" className="md:h-auto md:w-auto h-[20px] w-[20px] transition-transform duration-300 ease-in-out group-hover:rotate-45"/>
                     </button>
                 </div>
             </div>

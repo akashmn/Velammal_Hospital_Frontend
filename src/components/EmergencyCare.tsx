@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import icon from "@/public/24_7.svg";
-import calling_icon from "@/public/emergency_caller.svg";
+import calling_icon from "@/public/emergency_calling_icon.svg";
 import ambulance from "@/public/ambulance.svg";
 import image1 from "@/public/emergency_care_image.svg";
 
@@ -59,11 +59,11 @@ const EmergencyCare = () => {
           </div>
 
           {/* button */}
-          <button className="w-full md:w-[458px] h-[50px] md:h-[60px] py-[12px] px-[20px] bg-highlight_yellow flex flex-row items-center justify-evenly rounded-full gap-[15px]">
-            <p className="text-white text-[14px] md:text-[20px] font-semibold leading-[24px] md:leading-[31px] tracking-[0.3px] capitalize">
+          <button className="w-full md:w-[458px] h-[50px] md:h-[60px] py-[12px] px-[20px] bg-highlight_yellow flex flex-row items-center justify-evenly rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-white">
+            <p className="text-white text-[14px] md:text-[20px] font-semibold leading-[24px] md:leading-[31px] tracking-[0.3px] capitalize group-hover:text-black">
               Call Now For 24x7 Emergency Care
             </p>
-            <Image src={calling_icon} alt="call icon" className="bg-white rounded-full text-highlight_yellow p-1" />
+            <Image src={calling_icon} alt="call icon" height={25} width={25} className="bg-white rounded-full text-highlight_yellow p-1" />
           </button>
         </div>
       </div>

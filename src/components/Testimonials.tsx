@@ -113,7 +113,7 @@ const Testimonials = () => {
           .map((testimonial, index) => (
             <div
               key={index}
-              className="w-full md:w-[350px] lg:w-[413px] p-5 rounded-xl shadow-xl bg-white flex flex-col gap-5"
+              className="w-full md:w-[350px] lg:w-[413px] p-5 rounded-xl shadow-xl bg-white flex flex-col gap-5 hover:scale-110 duration-300 ease-in-out"
             >
               {/* Image, Name, and Stars */}
               <div className="flex flex-row items-center gap-3">

@@ -149,7 +149,7 @@ const Experts = () => {
                   <p className="text-[14px] leading-[120%] capitalize text-black">{doctor.type}</p>
                 </div>
                 <button>
-                  <Image src={arrow} alt="arrow" />
+                  <Image src={arrow} alt="arrow" className="transition-transform duration-300 ease-in-out hover:rotate-45"/>
                 </button>
               </div>
             </div>

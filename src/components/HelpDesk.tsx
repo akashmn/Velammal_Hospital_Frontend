@@ -44,9 +44,9 @@ const HelpDesk = () => {
                         Velammal Hospital offers comprehensive, personalised medical services to international patients, ensuring you receive exceptional care throughout. Our dedicated team supports you from travel arrangements to post-treatment care.
                     </p>
                 </div>
-                <button className="w-full max-w-[300px] h-[50px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-evenly rounded-full gap-[15px]">
-                    <p className="text-[14px] text-white font-semibold">International Help Desk</p>
-                    <Image src={calling_icon} alt="call icon" className='bg-white rounded-full p-1' />
+                <button className="w-full max-w-[300px] h-[50px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-evenly rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-white">
+                    <p className="text-[14px] text-white font-semibold group-hover:text-black">International Help Desk</p>
+                    <Image src={calling_icon} alt="call icon" className='bg-white rounded-full p-1 transition-transform duration-300 ease-in-out group-hover:rotate-[25deg]'/>
                 </button>
             </div>
         </div>

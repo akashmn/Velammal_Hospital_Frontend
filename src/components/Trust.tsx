@@ -77,9 +77,9 @@ const Trust: React.FC = () => {
             From life-saving treatments to everyday medical care, Velammal Hospital’s journey has always been about trust. Real stories of care, compassion, and cutting-edge healthcare delivered to every corner of South Tamil Nadu. Experience the values that make us more than just a hospital – we are a partner in your health and well-being.
             </p>
 
-            <button className="w-auto h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px]">
+            <button className="w-auto h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group">
                 <p className="text-[16px] text-white font-semibold">Watch Playlist</p>
-                <Image src={icon} alt="arrow up right"></Image>
+                <Image src={icon} alt="arrow up right" className="transition-transform duration-300 ease-in-out group-hover:rotate-45"></Image>
             </button>
         </div>
     </div>
