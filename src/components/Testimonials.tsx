@@ -54,12 +54,15 @@ const Testimonials = () => {
   // Adjust the number of testimonials per page based on screen size
   useEffect(() => {
     const updateTestimonialsPerPage = () => {
-      if (window.innerWidth < 768) {
-        setTestimonialsPerPage(1);
-      } else if (window.innerWidth < 1024) {
-        setTestimonialsPerPage(2);
-      } else {
-        setTestimonialsPerPage(3);
+      if (typeof window !== "undefined") {
+        // Only access window if it's defined
+        if (window.innerWidth < 768) {
+          setTestimonialsPerPage(1);
+        } else if (window.innerWidth < 1024) {
+          setTestimonialsPerPage(2);
+        } else {
+          setTestimonialsPerPage(3);
+        }
       }
     };
 

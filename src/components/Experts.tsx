@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import underline from "@/public/experts_underline.svg";
 import search from "@/public/search_icon.svg";
@@ -52,22 +52,28 @@ const doctors = [
 
 const Experts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsToShow = {
-    default: 4,
-    md: 3,
-    sm: 2,
-    xs: 1,
-  }; // Number of cards to show based on screen size
+  const [cardsToShow, setCardsToShow] = useState(4); // Default to 4 cards
 
-  const getCardsToShow = () => {
-    if (window.innerWidth < 640) return cardsToShow.xs; // Extra small devices
-    if (window.innerWidth < 768) return cardsToShow.sm; // Small devices
-    if (window.innerWidth < 1024) return cardsToShow.md; // Medium devices
-    return cardsToShow.default; // Default devices
-  };
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      if (typeof window !== "undefined") {
+        if (window.innerWidth < 640) setCardsToShow(1); // Extra small devices
+        else if (window.innerWidth < 768) setCardsToShow(2); // Small devices
+        else if (window.innerWidth < 1024) setCardsToShow(3); // Medium devices
+        else setCardsToShow(4); // Default devices
+      }
+    };
+
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+
+    return () => {
+      window.removeEventListener("resize", updateCardsToShow);
+    };
+  }, []);
 
   const nextCards = () => {
-    const maxIndex = doctors.length - getCardsToShow();
+    const maxIndex = doctors.length - cardsToShow;
     if (currentIndex < maxIndex) {
       setCurrentIndex(currentIndex + 1);
     }
@@ -124,18 +130,18 @@ const Experts = () => {
 
       {/* Doctors slider and button */}
       <div className="flex flex-col items-center justify-center gap-[50px] mt-[66px]">
-        {/* doctors cards */}
+        {/* Doctors cards */}
         <div className="h-auto w-full flex flex-row gap-[30px] flex-wrap justify-center">
-          {/* individual cards */}
-          {doctors.slice(currentIndex, currentIndex + getCardsToShow()).map((doctor, index) => (
+          {/* Individual cards */}
+          {doctors.slice(currentIndex, currentIndex + cardsToShow).map((doctor, index) => (
             <div
               key={index}
               className="bg-cover bg-center h-auto w-[240px] md:w-[281px] flex flex-col items-start justify-center rounded-xl"
               style={{ backgroundImage: `url(${bg.src})` }}
             >
-              {/* doctor image */}
+              {/* Doctor image */}
               <Image src={doctor.image} alt={doctor.name} className="h-[284px] w-[264px] mt-3" />
-              {/* doctor name and specialization */}
+              {/* Doctor name and specialization */}
               <div className="-mt-[40px] flex w-[230px] md:w-[273px] h-[90px] p-[12px_20px] justify-between items-center flex-shrink-0 rounded-[10px] bg-gradient-to-r from-[rgba(37,180,248,0.30)] to-[rgba(37,180,248,0)] backdrop-blur-[81.85px]">
                 <div className="flex flex-col">
                   <p className="text-[18px] font-bold leading-[120%] capitalize text-dark_text_blue">{doctor.name}</p>
@@ -154,7 +160,7 @@ const Experts = () => {
           <button onClick={prevCards} disabled={currentIndex === 0}>
             <Image src={left} alt="left" height={60} width={60} className="bg-white border-4 border-primary_blue rounded-full" />
           </button>
-          <button onClick={nextCards} disabled={currentIndex >= doctors.length - getCardsToShow()}>
+          <button onClick={nextCards} disabled={currentIndex >= doctors.length - cardsToShow}>
             <Image src={right} alt="right" height={60} width={60} className="bg-white border-4 border-primary_blue rounded-full" />
           </button>
         </div>
