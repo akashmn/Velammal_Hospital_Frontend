@@ -26,8 +26,8 @@ export default function Home() {
       <EmergencyCare/>
       <News_Articles/>
       <AccordionDemo/>
-      {/* <Footer_links/> */}
-      {/* <Footer/> */}
+      <Footer_links/>
+      <Footer/>
     </div>
   );
 }
