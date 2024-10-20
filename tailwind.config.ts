@@ -14,6 +14,7 @@ const config: Config = {
   			secondary_blue: '#11468D',
   			accent_blue: '#2A57A7',
   			dark_text_blue: '#011632',
+			hero_card_blue: '#18448c',
   			highlight_yellow: '#EC942C',
   			primary_white: '#FFFFFF',
   			secondary_white: '#F0FAFF',

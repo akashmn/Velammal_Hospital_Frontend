@@ -11,6 +11,7 @@ type CardItem = {
     icon: StaticImageData; // Assuming the image source is a string, update based on how you're importing icons
     background: string;
     text?: string;
+    hover_bg?: string;
 };
 
 const cardItems: CardItem[] = [
@@ -27,7 +28,7 @@ const cardItems: CardItem[] = [
     {
         title: "Buy Medicines",
         icon: buy_medicines, // replace with actual path
-        background: "bg-white", // Tailwind class for background color
+        background: "bg-white",
       },
 
       {
@@ -39,7 +40,7 @@ const cardItems: CardItem[] = [
       {
         title: "Book Appointment",
         icon: book_appointment, // replace with actual path
-        background: "bg-[#11468D;]", // Tailwind class for background color
+        background: "bg-dark_text_blue", // Tailwind class for background color
         text: "text-white",
       },
 

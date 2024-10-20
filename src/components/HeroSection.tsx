@@ -45,14 +45,14 @@ const HeroSection: React.FC = () => {
       {cardItems.map((item, index) => (
         <div
           key={index}
-          className={`w-[11em] md:w-[200px] ${item.background} h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl`}
+          className={`w-[11em] md:w-[250px] ${item.background} h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group`}
         >
           <Image
             src={item.icon}
             alt={item.title}
-            height={70}
-            width={70}
-            className={`border ${item.background} rounded-full`}
+            height={80}
+            width={80}
+            className={`border bg-white rounded-full group-hover:scale-125 duration-300 ease-in-out transition-all`}
           />
           <p className={`text-[14px] ${item.text} font-semibold`}>{item.title}</p>
         </div>
