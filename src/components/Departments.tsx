@@ -35,18 +35,18 @@ const Departments = () => {
         </div>
 
         {/* Department cards */}
-        <div className="w-full md:w-[1440px] grid grid-cols-3 md:grid-cols-6 gap-[20px] md:gap-[40px] px-[20px] md:px-[200px]">
+        <div className="w-full md:w-[1440px] grid grid-cols-2 md:grid-cols-6 gap-[20px] md:gap-[40px] px-[20px] md:px-[200px]">
         {departments.map((department, index) => (
           <div
             key={index}
-            className="h-[100px] md:h-[118.55px] w-full md:w-[144px] bg-white p-[15px] md:px-[23px] flex flex-col items-center justify-center gap-2 text-center rounded-xl hover:drop-shadow-2xl duration-300"
+            className="h-[100px] md:h-[118.55px] w-full md:w-[144px] bg-white flex flex-col items-center justify-center gap-2 text-center rounded-xl hover:drop-shadow-2xl duration-300"
           >
             <Image
               src={department.icon}
               alt={department.name}
               className="bg-primary_blue h-[30px] w-[30px] p-2 rounded-full"
             />
-            <p className="text-[12px] md:text-[16px] font-semibold">{department.name}</p>
+            <p className="text-[12px] md:text-[14px] font-semibold">{department.name}</p>
           </div>
         ))}
       </div>
