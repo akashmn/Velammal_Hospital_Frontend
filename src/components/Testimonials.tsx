@@ -3,49 +3,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import underline from "@/public/testimonial_underline.svg";
-import vidya from "@/public/testimonial_vidya_image.svg";
 import stars from "@/public/testimonial_review_star.svg";
 import left from "@/public/testimonial_left_arrow.svg";
 import right from "@/public/testimonial_right_arrow.svg";
 
-const testimonialsData = [
-  {
-    name: "Vidya",
-    image: vidya,
-    review:
-      "Velammal Hospital has saved the life of a 1-year-old girl from Bangalore. Referred with breathing difficulties, experts at our ENT department swiftly diagnosed a groundnut blocking her airway. Thanks to the expertise of ENT surgeon Dr. Rajavel.",
-  },
-  {
-    name: "Venugopal",
-    image: vidya,
-    review:
-      "Thanks to the remarkable multidisciplinary team at Velammal Hospital—including general surgeons, lab professionals, and plastic surgeons—this seemingly impossible situation was transformed into a success story, making Mr. Venugopal’s leg fully functional.",
-  },
-  {
-    name: "Kavya",
-    image: vidya,
-    review:
-      "Breast milk, often referred to as liquid gold, is essential for every baby's health. Thanks to the awareness session at Velammal, Mrs. Kalai Selvi committed to donating milk and helping countless babies without affecting her own baby’s nutrition.",
-  },
-  {
-    name: "1",
-    image: vidya,
-    review:
-      "Velammal Hospital has saved the life of a 1-year-old girl from Bangalore. Referred with breathing difficulties, experts at our ENT department swiftly diagnosed a groundnut blocking her airway. Thanks to the expertise of ENT surgeon Dr. Rajavel.",
-  },
-  {
-    name: "2",
-    image: vidya,
-    review:
-      "Velammal Hospital has saved the life of a 1-year-old girl from Bangalore. Referred with breathing difficulties, experts at our ENT department swiftly diagnosed a groundnut blocking her airway. Thanks to the expertise of ENT surgeon Dr. Rajavel.",
-  },
-  {
-    name: "3",
-    image: vidya,
-    review:
-      "Velammal Hospital has saved the life of a 1-year-old girl from Bangalore. Referred with breathing difficulties, experts at our ENT department swiftly diagnosed a groundnut blocking her airway. Thanks to the expertise of ENT surgeon Dr. Rajavel.",
-  },
-];
+// Import the testimonials data
+import testimonialsData from "@/json/Testimonials_data";
+
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
