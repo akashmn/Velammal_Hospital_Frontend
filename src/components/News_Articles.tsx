@@ -25,7 +25,7 @@ const News_Articles = () => {
               <input
                 type="text"
                 placeholder="Search News & Articles"
-                className="w-[250px] md:w-[308px] h-[48px] md:h-[56px] border-4 border-primary_blue rounded-full px-5"
+                className="w-[250px] md:w-[308px] h-[48px] md:h-[56px] border-4 border-primary_blue rounded-full px-5 focus:outline-none focus:ring-0"
               />
               <Image src={search} alt="search icon" height={24} width={24} className="-ml-10" />
             </div>

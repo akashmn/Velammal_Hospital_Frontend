@@ -74,7 +74,7 @@ const Experts = () => {
           <input
             type="text"
             placeholder="Search Doctors"
-            className="w-[240px] md:w-[400px] h-[50px] md:h-[56px] border-4 border-primary_blue rounded-full p-[20px] md:p-[32px]"
+            className="w-[240px] md:w-[400px] h-[50px] md:h-[56px] border-4 border-primary_blue rounded-full p-[20px] md:p-[32px] focus:outline-none focus:ring-0"
           />
           <Image src={search} alt="search icon" height={24} width={24} className="-ml-14 md:-ml-20" />
         </div>

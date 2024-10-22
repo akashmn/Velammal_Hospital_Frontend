@@ -30,7 +30,7 @@ const Departments = () => {
 
         {/* Search bar */}
         <div className="flex flex-row items-center justify-center gap-4 md:gap-5">
-            <input type="text" placeholder="Search departments" className="md:w-[400px] w-[100%] md:h-[56px] h-[40px] border-2 md:border-4 border-primary_blue rounded-full p-[10px] md:p-[20px]"/>
+            <input type="text" placeholder="Search departments" className="md:w-[400px] w-[100%] md:h-[56px] h-[40px] border-2 md:border-4 border-primary_blue rounded-full p-[10px] md:p-[20px] focus:outline-none focus:ring-0"/>
             <Image src={search} alt="search icon" height={24} width={24} className="md:-ml-20 -ml-1"></Image>
         </div>
 
