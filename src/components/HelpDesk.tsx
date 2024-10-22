@@ -1,8 +1,43 @@
 import Image from 'next/image'
 import underline from '@/public/helpdesk_underline.svg'
 import trust_image from '@/public/trust_image.svg'
-import online_consultation from '@/public/online_consultation.svg'
 import calling_icon from "@/public/Calling.png"
+
+import online_consultation from '@/public/helpdesk_online_consultation.svg'
+
+// Example JSON data for cards
+const cardData = [
+  {
+    id: 1,
+    title: "Online Consultation",
+    icon: online_consultation
+  },
+  {
+    id: 2,
+    title: "Find A Doctor",
+    icon: online_consultation
+  },
+  {
+    id: 3,
+    title: "Specialty",
+    icon: online_consultation
+  },
+  {
+    id: 4,
+    title: "Visa",
+    icon: online_consultation
+  },
+  {
+    id: 5,
+    title: "Plan Your Trip",
+    icon: online_consultation
+  },
+  {
+    id: 6,
+    title: "FAQ’s",
+    icon: online_consultation
+  }
+]
 
 const HelpDesk = () => {
   return (
@@ -26,21 +61,21 @@ const HelpDesk = () => {
 
             {/* cards */}
             <div className='grid grid-cols-2 md:grid-cols-2 gap-[20px]'>
-                {Array(6).fill(0).map((_, idx) => (
-                    <div key={idx} className="h-[118.55px] w-[144px] bg-white px-[23px] flex flex-col items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
-                        <Image src={online_consultation} alt="online_consultation" height={40} width={40} className="bg-primary_blue p-2 rounded-full" />
-                        <p className="text-[16px] font-semibold">Online Consultation</p>
+                {cardData.map(card => (
+                    <div key={card.id} className="h-[118.55px] w-[144px] bg-white px-[23px] flex flex-col items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
+                        <Image src={card.icon} alt={card.title} height={40} width={40} className="bg-primary_blue p-2 rounded-full" />
+                        <p className="text-[14px] font-semibold">{card.title}</p>
                     </div>
                 ))}
             </div>
 
             {/* body and button */}
-            <div className="w-full max-w-[296px] flex flex-col items-center justify-center gap-[20px] md:gap-[40px]">
+            <div className="w-full max-w-[296px] flex flex-col items-center justify-center gap-[20px] md:gap-[40px] md:-mt-[80px]">
                 <div className='flex flex-col items-center justify-center gap-[11px] text-center'>
-                    <p className='text-dark_text_blue text-[20px] md:text-[22px] text-start font-semibold leading-[28px] md:leading-[32px]'>
+                    <p className='text-dark_text_blue text-[20px] md:text-[20px] text-start font-semibold leading-[28px] md:leading-[32px]'>
                         Start Your Personalised Medical Treatment Journey
                     </p>
-                    <p className="text-body_text_white text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] text-left">
+                    <p className="text-body_text_white text-[14px] md:text-[15px] leading-[20px] md:leading-[24px] text-left">
                         Velammal Hospital offers comprehensive, personalised medical services to international patients, ensuring you receive exceptional care throughout. Our dedicated team supports you from travel arrangements to post-treatment care.
                     </p>
                 </div>
