@@ -28,9 +28,9 @@ const Trust: React.FC = () => {
         {/* body and carousel */}
         <div className="flex md:flex-row flex-col items-center justify-center md:gap-[30px] gap-[50px] w-full px-[15px]">
             {/* body */}
-            <div className="flex flex-col md:items-center h-auto md:w-[580px] w-full items-start gap-[30px]">
-                <div className="flex md:flex-row flex-col gap-[25px]">
-                    <Image src={body_image} alt="body_image" className="w-[250px] h-auto"></Image>
+            <div className="flex flex-col md:items-center h-auto md:w-[580px] w-full gap-[30px]">
+                <div className="flex md:flex-row flex-col items-center md:items-start gap-[25px]">
+                    <Image src={body_image} alt="body_image" className="md:w-[250px] w-[300px]  h-auto"></Image>
                     <div className="flex flex-col md:w-[238px] w-full gap-[10px] text-center md:text-left">
                         <p className="text-dark_text_blue font-bold md:font-[600] md:text-[18px] text-[16px] leading-normal">Healthcare with Integrity</p>
                         <p className="text-body_text_white font-[500] md:text-[15px] text-[12px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
