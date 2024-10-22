@@ -14,17 +14,17 @@ const Departments = () => {
     <div className="bg-secondary_white md:px-[72px] px-[20px] pb-[90px] flex flex-col items-center justify-center md:gap-[80px] gap-[40px]">
         {/* Heading and body */}
         <div className="md:mt-[230px] mt-[100px] flex flex-col md:flex-row items-center justify-center h-auto md:h-[212px] w-full md:w-[1170px]">
-            <div className="w-[100px] md:w-[150px] flex flex-col gap-[50px] md:gap-[100px] h-full">
-                <Image src={health} alt="icon1" className="md:-ml-[100px] max-sm:hidden"/> 
-                <Image src={accessibility} alt="icon2" className="md:-mb-[100px] -mt-[30px] ml-4 max-sm:hidden"/>
+            <div className="w-[100px] md:w-[150px] flex flex-col md:justify-center md:items-end md:-mt-[200px] md:-ml-[1] gap-[50px] h-full">
+                <Image src={health} alt="icon1" className="max-sm:hidden"/> 
+                <Image src={accessibility} alt="icon2" className="md:-mb-[100px] ml-4 max-sm:hidden"/>
             </div>
             <div className="h-full md:w-[824px] w-full md:gap-[40px] gap-[20px] flex flex-col items-center justify-center text-center font-semibold">
-                <p className="md:text-[56px] text-[25px] w-full md:font-semibold font-bold md:leading-[61.6px] leading-[40px] capitalize text-center text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
-                <p className="md:text-[20px] text-[16px] w-full font-medium md:leading-[24px] leading-[20px] capitalize md:text-center text-justify text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
+                <p className="md:text-[53px] text-[25px] w-full md:font-bold font-bold md:leading-[61.6px] leading-[40px] capitalize text-center text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
+                <p className="md:text-[16px] text-[16px] w-full font-medium md:leading-[24px] leading-[20px] capitalize md:text-center text-justify text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
             </div>
-            <div className="w-[100px] md:w-[150px] h-full flex flex-col md:gap-[100px] gap-[50px]">
-                <Image src={checkup} alt="icon3" className="md:ml-[100px] hidden md:block max-sm:hidden"/>
-                <Image src={services} alt="icon4" className="md:-mb-[100px] -mt-[30px] ml-4 max-sm:hidden"/>
+            <div className="w-[100px] md:w-[150px] h-full flex flex-col md:gap-[80px] gap-[50px]">
+                <Image src={checkup} alt="icon3" className=" hidden md:block max-sm:hidden"/>
+                <Image src={services} alt="icon4" className="-mt-[30px] ml-10 max-sm:hidden"/>
             </div>
         </div>
 
@@ -44,9 +44,9 @@ const Departments = () => {
             <Image
               src={department.icon}
               alt={department.name}
-              className="bg-primary_blue h-[30px] w-[30px] p-2 rounded-full"
+              className="bg-primary_blue h-[46px] w-[46px] p-2 rounded-full"
             />
-            <p className="text-[12px] md:text-[14px] font-semibold">{department.name}</p>
+            <p className="text-[12px] md:text-[16px] font-semibold">{department.name}</p>
           </div>
         ))}
       </div>
