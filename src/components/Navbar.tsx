@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
             {/* Navbar Links for Desktop */}
             <div className='lg:flex lg:flex-row lg:items-center lg:justify-around hidden gap-11'>
                 {Navbar_data.map((link, index) => (
-                    <div className="flex flex-row gap-11">
+                    <div className="flex flex-row gap-11" key={index}>
                         <Image src={navbar_line} alt="navbar_line"></Image>
                         <Link
                             key={index}
