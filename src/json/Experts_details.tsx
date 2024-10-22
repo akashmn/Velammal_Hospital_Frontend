@@ -37,6 +37,30 @@ const doctors: Doctor[] = [
     type: "Cardiothoracic Surgeon",
     image: dr_suganya,
   },
+  {
+    name: "Dr. Ramprasath",
+    specialization: "Senior Consultant",
+    type: "Cardiothoracic Surgeon",
+    image: dr_ramprasath,
+  },
+  {
+    name: "Dr. Kavitha",
+    specialization: "Senior Consultant",
+    type: "Cardiothoracic Surgeon",
+    image: dr_kavitha,
+  },
+  {
+    name: "Dr. Ganesh Kumar",
+    specialization: "Senior Consultant",
+    type: "Cardiothoracic Surgeon",
+    image: dr_ganesh_kumar,
+  },
+  {
+    name: "Dr. Suganya",
+    specialization: "Senior Consultant",
+    type: "Cardiothoracic Surgeon",
+    image: dr_suganya,
+  },
 ];
 
 export default doctors;

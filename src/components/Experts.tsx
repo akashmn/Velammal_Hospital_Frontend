@@ -114,17 +114,17 @@ const Experts = () => {
           {doctors.slice(currentIndex, currentIndex + cardsToShow).map((doctor, index) => (
             <div
               key={index}
-              className="bg-cover bg-center h-auto w-[240px] md:w-[281px] flex flex-col items-start justify-center rounded-xl"
+              className="bg-cover bg-center h-auto w-[260px] md:w-[281px] pb-2 px-1 flex flex-col items-start justify-center rounded-xl"
               style={{ backgroundImage: `url(${bg.src})` }}
             >
               {/* Doctor image */}
-              <Image src={doctor.image} alt={doctor.name} className="h-[284px] w-[264px] mt-3" />
+              <Image src={doctor.image} alt={doctor.name} className="h-[254px] w-[264px] mt-3" />
               {/* Doctor name and specialization */}
-              <div className="-mt-[40px] flex w-[230px] md:w-[273px] h-[90px] p-[12px_20px] justify-between items-center flex-shrink-0 rounded-[10px] bg-gradient-to-r from-[rgba(37,180,248,0.30)] to-[rgba(37,180,248,0)] backdrop-blur-[81.85px]">
+              <div className="-mt-[50px] flex w-[200px] md:w-[273px] h-[60px] p-[12px_20px] justify-between items-center flex-shrink-0 rounded-[10px] bg-gradient-to-r from-[rgba(37,180,248,0.30)] to-[rgba(37,180,248,0)] backdrop-blur-[81.85px]">
                 <div className="flex flex-col">
-                  <p className="text-[18px] font-bold leading-[120%] capitalize text-dark_text_blue">{doctor.name}</p>
-                  <p className="text-[14px] leading-[120%] capitalize text-black">{doctor.specialization}</p>
-                  <p className="text-[14px] leading-[120%] capitalize text-black">{doctor.type}</p>
+                  <p className="text-[16px] font-bold leading-[120%] capitalize text-dark_text_blue">{doctor.name}</p>
+                  <p className="text-[12px] leading-[120%] capitalize text-black">{doctor.specialization}</p>
+                  <p className="text-[12px] leading-[120%] capitalize text-black">{doctor.type}</p>
                 </div>
                 <button>
                   <Image src={arrow} alt="arrow" className="transition-transform duration-300 ease-in-out hover:rotate-45"/>
