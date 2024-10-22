@@ -23,7 +23,7 @@ export function AccordionDemo() {
   const descriptionClasses =
     "text-body_text_white text-[16px] font-semibold md:text-[20px] leading-[24px] md:leading-[31px] tracking-[0.3px]";
   const triggerClasses =
-    "md:text-center font-medium text-[16px] text-start md:text-[18px] leading-[24px] md:leading-[27.9px] tracking-[0.27px] md:px-4 rounded-t-[20px] cursor-pointer";
+    "md:text-center font-medium text-[16px] text-start md:text-[18px] leading-[24px] md:leading-[27.9px] tracking-[0.27px] md:px-4 rounded-t-[20px] cursor-pointer transition-all duration-0 ease-in-out";
   const contentClasses =
     "bg-primary_blue text-white font-normal text-[16px] md:text-[18px] leading-[24px] md:leading-[27.9px] tracking-[0.27px] px-4 md:px-[37px] py-[14px] md:py-[18px] rounded-b-[20px]";
 
