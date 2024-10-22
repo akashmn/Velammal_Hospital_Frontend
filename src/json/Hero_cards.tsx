@@ -18,7 +18,7 @@ const cardItems: CardItem[] = [
     {
       title: "Consult Online",
       icon: consult_online, // replace with actual path
-      background: "bg-white", // Tailwind class for background color
+      background: "bg-black", // Tailwind class for background color
     },
     {
         title: "Health Check-up",

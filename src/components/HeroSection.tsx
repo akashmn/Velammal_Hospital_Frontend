@@ -1,17 +1,22 @@
-"use client"
+"use client";
 
-
+import consult_online from '@/public/hero_consult_online.svg';
+import health_check from '@/public/hero_health_check.svg';
+import buy_medicines from '@/public/hero_buy_medicines.svg';
+import health_records from '@/public/hero_health_record.svg';
+import book_appointment from '@/public/hero_book_appointment.svg';
+import book_appointment_white from '@/public/hero_book_appointment_blue.svg';
 import { useState } from "react";
 import Image from "next/image";
 import hero2 from '@/public/hero_image2.png';
 import underline from '@/public/hero_underline.png';
 import calling from '@/public/Calling.png';
 import calling_white from '@/public/hero_calling_white.svg';
-import icon from '@/public/arrow_up_right.png';
-import cardItems from '@/json/Hero_cards';
+import arrowIcon from '@/public/arrow_up_right.png';
 
 const HeroSection: React.FC = () => {
-  const [isHovered, setIsHovered] = useState(false); // State to track hover
+  const [isHovered, setIsHovered] = useState(false);
+  const [icon, setIcon] = useState(book_appointment);
 
   return (
     <div className="h-auto flex flex-col justify-center">
@@ -30,7 +35,7 @@ const HeroSection: React.FC = () => {
             <div className="md:mt-14 flex flex-col md:flex-row gap-5 md:gap-10 justify-center md:justify-start">
               <button className="w-[15em] md:w-auto h-[50px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-center rounded-full gap-[10px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group">
                 <p className="text-[14px] text-white font-semibold">Book an appointment</p>
-                <Image className="w-8 h-8 transition-transform duration-300 ease-in-out group-hover:rotate-45" src={icon} alt="arrow up right" />
+                <Image className="w-8 h-8 transition-transform duration-300 ease-in-out group-hover:rotate-45" src={arrowIcon} alt="arrow up right" />
               </button>
 
               <div
@@ -55,21 +60,66 @@ const HeroSection: React.FC = () => {
 
       {/* hero cards */}
       <div className="md:mx-[100px] md:z-5 mt-[40px] md:-mt-[40px] md:w-[1270px] md:h-[172px] md:flex md:flex-row md:items-center gap-[20px] md:gap-[30px] md:justify-center grid grid-cols-2 pr-[0.5em] md:pr-0 pl-[0.5em] md:pl-0">
-        {cardItems.map((item, index) => (
-          <div
-            key={index}
-            className={`w-[11em] md:w-[250px] ${item.background} h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group`}
-          >
-            <Image
-              src={item.icon}
-              alt={item.title}
-              height={80}
-              width={80}
-              className={`border bg-white rounded-full group-hover:scale-125 duration-300 ease-in-out transition-all`}
-            />
-            <p className={`text-[14px] ${item.text} font-semibold`}>{item.title}</p>
-          </div>
-        ))}
+        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+          <Image
+            src={consult_online}
+            alt="Consult Online"
+            height={50}
+            width={50}
+            className="border bg-hero_card_blue rounded-full group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all p-2"
+          />
+          <p className="text-[14px] font-semibold">Consult Online</p>
+        </div>
+
+        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+          <Image
+            src={health_check}
+            alt="Health Check-up"
+            height={50}
+            width={50}
+            className="border  rounded-full bg-hero_card_blue group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all p-2"
+          />
+          <p className="text-[14px] font-semibold">Health Check-up</p>
+        </div>
+
+        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+          <Image
+            src={buy_medicines}
+            alt="Buy Medicines"
+            height={50}
+            width={50}
+            className="border rounded-full bg-hero_card_blue group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all p-2"
+          />
+          <p className="text-[14px] font-semibold">Buy Medicines</p>
+        </div>
+
+        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+          <Image
+            src={health_records}
+            alt="Health Records"
+            height={50}
+            width={50}
+            className="border bg-hero_card_blue rounded-full group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all p-2"
+          />
+          <p className="text-[14px] font-semibold">Health Records</p>
+        </div>
+
+        <div
+      className="w-[11em] md:w-[250px] bg-hero_card_blue h-[11em] md:h-full flex flex-col justify-center items-center gap-5 rounded-xl drop-shadow-2xl group hover:bg-white  duration-300 ease-in-out transition-all"
+      onMouseEnter={() => setIcon(book_appointment_white)} // Change icon on hover
+      onMouseLeave={() => setIcon(book_appointment)} // Reset icon on mouse leave
+    >
+      <Image
+        src={icon} // Use the state variable for the image source
+        alt="Book Appointment"
+        height={50}
+        width={50}
+        className="border rounded-full bg-white group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all p-2"
+      />
+      <p className="text-[14px] text-white font-semibold group-hover:text-black duration-300 ease-in-out transition-all">
+        Book Appointment
+      </p>
+    </div>
       </div>
     </div>
   );
