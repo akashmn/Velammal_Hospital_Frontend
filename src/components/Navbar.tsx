@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/Healing_touch_Logo.png";
 import Navbar_data from "@/json/Navbar_data";
+import navbar_line from "@/public/navbar_line.svg";
 
 const Navbar: React.FC = () => {
     const [activeLink, setActiveLink] = useState<string>("/"); // Track the active link
@@ -39,16 +40,19 @@ const Navbar: React.FC = () => {
             </button>
 
             {/* Navbar Links for Desktop */}
-            <div className='lg:flex lg:flex-row lg:items-center lg:justify-around lg:gap-[100px] hidden'>
+            <div className='lg:flex lg:flex-row lg:items-center lg:justify-around hidden gap-11'>
                 {Navbar_data.map((link, index) => (
-                    <Link
-                        key={index}
-                        href={link.href}
-                        onClick={() => handleLinkClick(link.href)}
-                        className={activeLink === link.href ? "font-semibold" : ""}
-                    >
-                        {link.text}
-                    </Link>
+                    <div className="flex flex-row gap-11">
+                        <Image src={navbar_line} alt="navbar_line"></Image>
+                        <Link
+                            key={index}
+                            href={link.href}
+                            onClick={() => handleLinkClick(link.href)}
+                            className={activeLink === link.href ? "font-bold text-base" : "font-medium"}
+                        >
+                            {link.text}
+                        </Link>
+                    </div>
                 ))}
             </div>
 
