@@ -11,10 +11,10 @@ import right from "@/public/testimonial_right_arrow.svg";
 
 import doctors from "@/json/Experts_details";
 
-
 const Experts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(4); // Default to 4 cards
+  const [selectedLocation, setSelectedLocation] = useState<string | null>("Chennai"); // Track selected location
 
   useEffect(() => {
     const updateCardsToShow = () => {
@@ -81,10 +81,26 @@ const Experts = () => {
 
         {/* Places tabs */}
         <div className="flex flex-row items-center justify-center gap-4 md:gap-[55px]">
-          <button className="h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] bg-primary_blue text-white rounded-full">
+          <button
+            className={`h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
+            ${
+              selectedLocation === "Madurai"
+                ? "bg-primary_blue text-white"
+                : "bg-[#F5F6F8] text-black"
+            }`}
+            onClick={() => setSelectedLocation("Madurai")}
+          >
             Madurai
           </button>
-          <button className="h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] bg-primary_blue text-white rounded-full">
+          <button
+            className={`h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
+            ${
+              selectedLocation === "Chennai"
+                ? "bg-primary_blue text-white"
+                : "bg-[#F5F6F8] text-black"
+            }`}
+            onClick={() => setSelectedLocation("Chennai")}
+          >
             Chennai
           </button>
         </div>
