@@ -8,6 +8,7 @@ import image1 from "@/public/trust_carousel_image1.svg";
 import icon from '@/public/arrow_up_right.png'
 
 import Carousel2 from "@/components/trust_animated_carousel"
+// import Trust_video_clip from "@/components/Trust_video_clip"
 
 //shadcn 
 import {
@@ -70,6 +71,10 @@ const Trust: React.FC = () => {
 
         {/* animated automatic cards */}
         <Carousel2/>
+
+        {/* trust video clip */}
+        {/* <Trust_video_clip/> */}
+
 
         {/* Trust Ending section */}
         <div className="flex flex-col items-center justify-center gap-[25px] h-auto w-full md:w-[1228px] px-[15px]">
