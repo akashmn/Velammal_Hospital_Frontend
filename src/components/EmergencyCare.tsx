@@ -73,7 +73,7 @@ const EmergencyCare = () => {
         <Carousel
           plugins={[
             Autoplay({
-              delay: 3000,
+              delay: 2000,
             }),
           ]}
           className="w-full h-full"
