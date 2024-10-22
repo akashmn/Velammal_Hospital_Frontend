@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import header_data from '@/json/Header_data';
+import line from '@/public/navbar_line.svg';
 
 const Header: React.FC = () => {
     return (
@@ -19,9 +20,11 @@ const Header: React.FC = () => {
                     <p className='text-[16px] font-normal tracking-[0.64px] text-[#F7F9FE]"'>0452 711 33 33</p>
                 </div>
             </div>
-            <div className="flex flex-row gap-10 text-[12px] font-normal leading-[12px] tracking-[0.4px] font-figtree text-white">
+            <div className="flex flex-row items-center justify-center gap-2 text-[12px] font-normal leading-[12px] tracking-[0.4px] font-figtree text-white">
                 <Link href="/">Privacy Policy</Link>
+                <Image src={line} alt=''></Image>
                 <Link href="/">Disclaimer</Link>
+                <Image src={line} alt=''></Image>
                 <Link href="/">Contact</Link>
             </div>
         </div>
