@@ -218,7 +218,7 @@ const Footer_links = () => {
 
 
             {/* contact us and 2 buttons*/}
-            <div className="flex flex-col md:gap-[1000px] gap-[50px]">
+            <div className="flex flex-col md:gap-[600px] gap-[50px]">
                 <div className="flex flex-col gap-[14px]">
                     <div className="flex flex-col gap-3">
                         <p className="text-[18px] md:text-[20px] normal-case">Contact Us</p>
@@ -233,16 +233,22 @@ const Footer_links = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-[20px]">
-                    <button className="md:w-[300px] w-[200px] md:h-[60px] h-[40px] py-[16px] px-[16px] bg-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-white">
-                        <p className="md:text-[14px] text-[12px] text-white font-semibold group-hover:text-primary_blue">Book an appointment</p>
-                        <Image src={icon} alt="arrow up right" className="md:h-auto md:w-auto h-[20px] w-[20px] transition-transform duration-300 ease-in-out group-hover:rotate-45"/>
+                <div className="flex md:flex-col items-end md:gap-[70px]">
+                    {/* back to top button */}
+                    <button className="max-sm:hidden">
+                        <Image src={icon} alt="" className="h-[50px] w-[50px] rotate-[-45deg]"></Image>
                     </button>
+                    <div className="flex flex-col gap-[20px]">
+                        <button className="md:w-[300px] w-[200px] md:h-[60px] h-[40px] py-[16px] px-[16px] bg-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-white">
+                            <p className="md:text-[14px] text-[12px] text-white font-semibold group-hover:text-primary_blue">Book an appointment</p>
+                            <Image src={icon} alt="arrow up right" className="md:h-auto md:w-auto h-[20px] w-[20px] transition-transform duration-300 ease-in-out group-hover:rotate-45"/>
+                        </button>
 
-                    <button className="md:w-full w-[200px] md:h-[60px] h-[40px] py-[12px] md:px-[16px] px-[15px] bg-white flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-primary_blue">
-                        <p className="md:text-[14px] text-[12px] text-primary_blue font-bold group-hover:text-white">Book Health Check-up</p>
-                        <Image src={whiteArrow} alt="arrow up right" className="md:h-[35px] md:w-[35px] h-[22px] w-[22px]  bg-primary_blue rounded-full p-1 transition-transform duration-300 ease-in-out group-hover:rotate-45"/>
-                    </button>
+                        <button className="md:w-full w-[200px] md:h-[60px] h-[40px] py-[12px] md:px-[16px] px-[15px] bg-white flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-primary_blue">
+                            <p className="md:text-[14px] text-[12px] text-primary_blue font-bold group-hover:text-white">Book Health Check-up</p>
+                            <Image src={whiteArrow} alt="arrow up right" className="md:h-[35px] md:w-[35px] h-[22px] w-[22px]  bg-primary_blue rounded-full p-1 transition-transform duration-300 ease-in-out group-hover:rotate-45"/>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
