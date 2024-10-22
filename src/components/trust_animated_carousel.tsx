@@ -11,7 +11,7 @@ import small2 from "@/public/trust_carousel2_small_image2.svg";
 
 const Carousel: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState<number>(0);
-  
+
   const largeItems: StaticImageData[] = [
     large1,
     large1
@@ -86,7 +86,7 @@ const Carousel: React.FC = () => {
                 <Image
                   src={item}
                   alt={`Small Item 1 ${index + 1}`}
-                  className="w-full h-full object-cover rounded-r-xl"
+                  className="w-full h-full object-cover rounded-tr-xl"
                 />
               </div>
             ))}
@@ -111,7 +111,7 @@ const Carousel: React.FC = () => {
                 <Image
                   src={item}
                   alt={`Small Item 2 ${index + 1}`}
-                  className="w-full h-full object-cover rounded-r-xl" 
+                  className="w-full h-full object-cover rounded-br-xl" 
                 />
               </div>
             ))}
