@@ -15,11 +15,11 @@ const Header: React.FC = () => {
                     ))}
                 </div>
                 <div className='flex flex-row gap-8 items-center'>
-                    <p className='text-xs'>Book your Appointment</p>
-                    <p className='text-base'>0452 711 33 33</p>
+                    <p className='text-[13px] font-normal leading-[12px] tracking-[0.4px] text-white'>Book your Appointment</p>
+                    <p className='text-[16px] font-normal tracking-[0.64px] text-[#F7F9FE]"'>0452 711 33 33</p>
                 </div>
             </div>
-            <div className="flex flex-row gap-10 text-xs">
+            <div className="flex flex-row gap-10 text-[12px] font-normal leading-[12px] tracking-[0.4px] font-figtree text-white">
                 <Link href="/">Privacy Policy</Link>
                 <Link href="/">Disclaimer</Link>
                 <Link href="/">Contact</Link>
