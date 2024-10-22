@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import image from "@/public/footer_image.svg"
 import logo from "@/public/footer_logo.svg"
@@ -235,7 +237,9 @@ const Footer_links = () => {
 
                 <div className="flex md:flex-col items-end md:gap-[70px]">
                     {/* back to top button */}
-                    <button className="max-sm:hidden">
+                    <button 
+                        className="max-sm:hidden"
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         <Image src={icon} alt="" className="h-[50px] w-[50px] rotate-[-45deg]"></Image>
                     </button>
                     <div className="flex flex-col gap-[20px]">
