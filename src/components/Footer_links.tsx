@@ -81,27 +81,27 @@ const Footer_links = () => {
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
                         <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">Medical Services</Link>
+                        <Link href="/">Patent testimonials</Link>
+                        <Link href="/">Value added Services</Link>
+                        <Link href="/">Pay online</Link>
+                        <Link href="/">Velammel Surgery</Link>
                     </div>
                 </div>
 
                 {/* news media */}
                 <div className="flex flex-col gap-[10px]">
                     <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">News Media</p>
+                        <p className="text-[18px] md:text-[20px] normal-case">News & Media</p>
                         <Image src={underline} alt="underline" />
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">News</Link>
+                        <Link href="/">Events</Link>
+                        <Link href="/">Interview</Link>
+                        <Link href="/">Watch Our Videos</Link>
+                        <Link href="/">Media Contacts</Link>
+                        <Link href="/">Hospitals Reviews</Link>
                     </div>
                 </div>
 
@@ -112,109 +112,104 @@ const Footer_links = () => {
                         <Image src={underline} alt="underline" />
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">Health Library</Link>
+                        <Link href="/">Covid19 Updates</Link>
+                        <Link href="/">Covid 19 FAQS</Link>
+                        <Link href="/">Covid-19 Vaccination</Link>
+                        <Link href="/">Covid-19 New Symptoms</Link>
                     </div>
                 </div>
             </div>
 
             <div className="flex-col flex gap-[36px]">
-                {/* patent core */}
+                {/* Centres of Excellences */}
                 <div className="flex flex-col gap-[14px]">
                     <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">Patent Core</p>
+                        <p className="text-[18px] md:text-[20px] normal-case">Centres of Excellences</p>
                         <Image src={underline} alt="underline" />
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                    </div>
-                </div>
-
-                {/* news media */}
-                <div className="flex flex-col gap-[10px]">
-                    <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">News Media</p>
-                        <Image src={underline} alt="underline" />
-                    </div>
-                    <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                    </div>
-                </div>
-
-                {/* blogs */}
-                <div className="flex flex-col gap-[10px]">
-                    <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">Blogs</p>
-                        <Image src={underline} alt="underline" />
-                    </div>
-                    <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">Breast And Endocrine</Link>
+                        <Link href="/">Cardiology</Link>
+                        <Link href="/">Cardio Thoracic Surgery</Link>
+                        <Link href="/">Dental</Link>
+                        <Link href="/">Dermatology</Link>
+                        <Link href="/">ENT</Link>
+                        <Link href="/">General Medicine</Link>
+                        <Link href="/">General Surgery</Link>
+                        <Link href="/">Medical Endocrinology</Link>
+                        <Link href="/">Medical Gastroenterology</Link>
+                        <Link href="/">Nephrology</Link>
+                        <Link href="/">Neurology</Link>
+                        <Link href="/">Neuro Surgery</Link>
+                        <Link href="/">Obstetrics & Gynaecology</Link>
+                        <Link href="/">Oncology</Link>
+                        <Link href="/">Ophthalmology</Link>
+                        <Link href="/">Orthopaedics</Link>
+                        <Link href="/">Pediatrics</Link>
+                        <Link href="/">Pediatrics Surgery</Link>
+                        <Link href="/">Physiotherapy</Link>
+                        <Link href="/">Plastic Surgery</Link>
+                        <Link href="/">Psychiatry</Link>
+                        <Link href="/">Reproductive Medicine</Link>
+                        <Link href="/">Respiratory Medicine</Link>
+                        <Link href="/">Rheumatology</Link>
+                        <Link href="/">Surgical Gastroenterology</Link>
+                        <Link href="/">Urology</Link>
                     </div>
                 </div>
             </div>
             
             <div className="flex-col flex gap-[36px]">
-                {/* patent core */}
+                {/* cooperate */}
                 <div className="flex flex-col gap-[14px]">
                     <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">Patent Core</p>
+                        <p className="text-[18px] md:text-[20px] normal-case">Cooperate</p>
                         <Image src={underline} alt="underline" />
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">Company Overview</Link>
+                        <Link href="/">Our Doctors Achieve</Link>
+                        <Link href="/">The Velammal Ethos</Link>
+                        <Link href="/">The Velammal Story</Link>
+                        <Link href="/">Management</Link>
+                        <Link href="/">Investor Relations</Link>
+                        <Link href="/">Investor Presentation</Link>
+                        <Link href="/">Initiatives</Link>
+                        <Link href="/">Awards & Accolades</Link>
+                        <Link href="/">Careers</Link>
                     </div>
                 </div>
 
-                {/* news media */}
+                {/* Academic and research */}
                 <div className="flex flex-col gap-[10px]">
                     <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">News Media</p>
+                        <p className="text-[18px] md:text-[20px] normal-case">Academic and research</p>
                         <Image src={underline} alt="underline" />
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">Courses</Link>
+                        <Link href="/">Academics</Link>
+                        <Link href="/">Clinical Research</Link>
+                        <Link href="/">Collaborative Forums</Link>
+                        <Link href="/">What’s New</Link>
                     </div>
                 </div>
 
-                {/* blogs */}
+                {/* Medical Procedures */}
                 <div className="flex flex-col gap-[10px]">
                     <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">Blogs</p>
+                        <p className="text-[18px] md:text-[20px] normal-case">Medical Procedures</p>
                         <Image src={underline} alt="underline" />
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">Hand MicroSurgery</Link>
+                        <Link href="/">Cosmetic And Plastic Surgery</Link>
+                        <Link href="/">Bone Marrow Transplant</Link>
+                        <Link href="/">Hip Arthroscopy</Link>
+                        <Link href="/">Knee Replacement Surgery</Link>
+                        <Link href="/">Minimally Invasive Cardiac Surgery</Link>
+                        <Link href="/">G Scan – Open Standing MRI Scan</Link>
                     </div>
                 </div>
             </div>
@@ -224,15 +219,15 @@ const Footer_links = () => {
             <div className="flex flex-col md:gap-[600px] gap-[50px]">
                 <div className="flex flex-col gap-[14px]">
                     <div className="flex flex-col gap-3">
-                        <p className="text-[18px] md:text-[20px] normal-case">Contact</p>
+                        <p className="text-[18px] md:text-[20px] normal-case">Contact Us</p>
                         <Image src={underline} alt="underline" />
                     </div>
                     <div className="flex flex-col gap-[10px] text-[14px]">
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
-                        <Link href="/">Find A Doctor</Link>
+                        <Link href="/">Post A Query</Link>
+                        <Link href="/">Consult Doctors Online</Link>
+                        <Link href="/">Book Physical Appointment</Link>
+                        <Link href="/">Give Your Feedback</Link>
+                        <Link href="/">Velammel Lifeline</Link>
                     </div>
                 </div>
 
