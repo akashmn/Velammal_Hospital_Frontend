@@ -26,17 +26,17 @@ const Trust: React.FC = () => {
         </div>
 
         {/* body and carousel */}
-        <div className="flex md:flex-row flex-col items-center justify-center md:gap-[100px] gap-[50px] w-full px-[15px]">
+        <div className="flex md:flex-row flex-col items-center justify-center md:gap-[30px] gap-[50px] w-full px-[15px]">
             {/* body */}
-            <div className="flex flex-col h-auto md:w-[580px] w-full gap-[30px]">
-                <div className="flex md:flex-row flex-col items-center gap-[25px]">
-                    <Image src={body_image} alt="body_image" className="w-[300px] h-auto"></Image>
+            <div className="flex flex-col md:items-center h-auto md:w-[580px] w-full items-start gap-[30px]">
+                <div className="flex md:flex-row flex-col gap-[25px]">
+                    <Image src={body_image} alt="body_image" className="w-[250px] h-auto"></Image>
                     <div className="flex flex-col md:w-[238px] w-full gap-[10px] text-center md:text-left">
-                        <p className="text-dark_text_blue font-bold md:font-[600] md:text-[20px] text-[16px] leading-normal">Healthcare with Integrity</p>
+                        <p className="text-dark_text_blue font-bold md:font-[600] md:text-[18px] text-[16px] leading-normal">Healthcare with Integrity</p>
                         <p className="text-body_text_white font-[500] md:text-[15px] text-[12px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
                     </div>
                 </div>
-                <p className="text-body_text_white text-justify font-[500] md:text-[18px] text-[15px] leading-normal md:px-[20px] px-[15px]">
+                <p className="text-body_text_white text-justify font-[500] md:text-[17px] text-[15px] leading-normal md:px-[20px] px-[15px]">
                     With over 51 lakh patients treated, Velammal Hospital stands as a beacon of healthcare excellence, offering world-class medical facilities, advanced technologies, and personalized care. Spanning 20 Lakhs square feet, Velammal Hospital is equipped with 2100 beds, 21 state-of-the-art operation theaters, 55 dialysis units, and specialized ICUs. Our modern facilities at Velammal Hospital Madurai combined with a dedicated team of over 450 doctors and 1100 nurses, ensure that every patient receives the highest quality care.
                     <br /><br />
                     From our neonatal ICU to our trusted transplant program, Velammal Hospital combines modern medical technology with compassionate care, serving millions with unmatched expertise.
@@ -50,7 +50,7 @@ const Trust: React.FC = () => {
                       delay: 2000,
                     }),
                   ]}
-                className="md:w-[600px] w-full h-auto rounded-lg px-[15px]"
+                className="md:w-[700px] w-full h-auto rounded-lg px-[15px]"
             >
                 <CarouselContent>
                     <CarouselItem>
