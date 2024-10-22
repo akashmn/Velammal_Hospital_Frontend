@@ -17,17 +17,17 @@ const Carousel: React.FC = () => {
 
   const largeItems: CarouselItem[] = [
     { image: large1, text: "51 Lakhs + Patients Treated" },
-    { image: large1, text: "51 Lakhs + Patients Treated" },
+    { image: large1, text: "1,11,000+ Successfull Operations" },
   ];
 
   const smallItems1: CarouselItem[] = [
     { image: small1, text: "12+ Years Trusted Legacy" },
-    { image: small2, text: "12+ Years Trusted Legacy" },
+    { image: small2, text: "32+ Specialty" },
   ];
 
   const smallItems2: CarouselItem[] = [
-    { image: small2, text: "100+  Dedicated Staffs" },
-    { image: small1, text: "100+  Dedicated Staffs" },
+    { image: small2, text: "1100+  Dedicated Staffs"},
+    { image: small1, text: "450+ Doctors"},
   ];
 
   useEffect(() => {
@@ -99,7 +99,7 @@ const Carousel: React.FC = () => {
                 />
                 {/* Overlay Text for Small Image 1 */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-white text-5xl font-semibold text-center p-3 rounded-md">
+                  <p className="text-white text-[36px] font-semibold text-center p-3 rounded-md">
                     {item.text}
                   </p>
                 </div>
@@ -130,7 +130,7 @@ const Carousel: React.FC = () => {
                 />
                 {/* Overlay Text for Small Image 2 */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-white text-lg font-semibold  p-3 rounded-md">
+                  <p className="text-white text-[36px] font-semibold text-center p-3 rounded-md">
                     {item.text}
                   </p>
                 </div>
