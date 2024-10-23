@@ -20,11 +20,11 @@ const EmergencyCare = () => {
       {/* Emergency body and icons and button */}
       <div className="w-full md:w-1/2 py-[50px] md:py-[100px] md:px-0 px-5 pl-[20px] md:pl-[71.35px]">
         {/* heading and body */}
-        <div className="flex flex-col gap-[20px] md:gap-[50px]">
+        <div className="flex flex-col gap-[20px] md:gap-[10px]">
           {/* icon and main heading */}
-          <div className="flex flex-row gap-[15px] items-center">
+          <div className="flex flex-row gap-[25px] items-center">
             <Image src={icon} alt="icon" />
-            <p className="text-white text-[32px] md:text-[56px] font-semibold capitalize leading-[40px] md:leading-[128px]">
+            <p className="text-white text-[32px] md:text-[56px] font-bold capitalize leading-[40px] md:leading-[128px]">
               Critical Care
             </p>
           </div>
@@ -35,7 +35,7 @@ const EmergencyCare = () => {
 
         {/* subheading and body */}
         <div className="w-full md:w-[543px] flex flex-col gap-[15px]">
-          <p className="text-white text-[18px] md:text-[24px] font-semibold leading-[28px] md:leading-[37.2px] tracking-[0.36px] capitalize">
+          <p className="md:w-[483px] text-white text-[18px] md:text-[24px] font-semibold leading-[28px] md:leading-[37.2px] tracking-[0.36px] capitalize">
             Velammal’s commitment to saving lives never rests
           </p>
           <p className="text-white opacity-75 text-[16px] md:text-[20px] font-normal leading-[24px] md:leading-[31px] tracking-[0.3px] capitalize">

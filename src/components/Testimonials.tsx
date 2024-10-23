@@ -59,12 +59,12 @@ const Testimonials = () => {
       {/* Heading & Subheading */}
       <div className="mt-20 w-full flex flex-col items-center gap-5">
         <div className="flex flex-col items-center justify-center">
-          <p className="text-center text-2xl md:text-3xl font-bold leading-tight uppercase text-dark_text_blue">
+          <p className="text-center text-2xl md:text-[42px] font-bold leading-tight text-dark_text_blue">
             Patient testimonials
           </p>
           <Image src={underline} alt="underline" className="w-40 md:w-80 -mt-2" />
         </div>
-        <p className="text-base md:text-lg font-medium leading-relaxed text-center max-w-xl">
+        <p className="text-base md:text-[18px] font-medium leading-relaxed text-center max-w-xl">
           We are proud of our exceptional team for their lifesaving efforts.
           Velammal, Saving Lives Through Expert Procedures
         </p>
@@ -87,7 +87,7 @@ const Testimonials = () => {
                   className="w-12 h-12 md:w-14 md:h-14"
                 />
                 <div>
-                  <p className="text-dark_text_blue text-sm md:text-base font-medium leading-tight">
+                  <p className="text-dark_text_blue text-sm md:text-[20px] font-medium leading-tight">
                     {testimonial.name}
                   </p>
                   <Image src={stars} alt="stars" className="w-16 md:w-20" />

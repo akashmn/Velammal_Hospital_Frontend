@@ -8,18 +8,18 @@ import { NetworkDetails } from '@/json/Network_details'; // Import the type
 const Network = () => {
 
   return (
-    <div className='bg-secondary_white h-auto w-full md:px-[80px] px-[20px] md:py-[82px] py-[40px] flex flex-col items-center justify-center gap-[50px] md:gap-[57px]'>
+    <div className='bg-secondary_white h-auto w-full md:px-[80px] px-[20px] md:py-[82px] py-[40px] flex flex-col items-center justify-center gap-[50px] md:gap-[87px]'>
       <div className='flex flex-col items-center justify-center md:gap-[80px] gap-[25px]'>
         {/* heading & underline */}
         <div className='flex flex-col items-center justify-center md:w-[1290px] w-full md:gap-5 gap-2 px-4'>
-          <p className='text-[#011632] text-center font-bold md:font-[600] md:text-[56px] text-[28px] md:leading-[21px] leading-none'>Velammal Healthcare Network</p>
+          <p className='text-[#011632] text-center font-bold md:font-[700] md:text-[56px] text-[28px] md:leading-[21px] leading-none'>Velammal Healthcare Network</p>
           <Image src={underline} alt='underline' className='h-[10px] w-[1200px]' />
         </div>
 
         {/* subheading & body */}
         <div className='flex flex-col items-center justify-center md:w-[1290px] w-full gap-5'>
           <p className='text-dark_text_blue text-center font-[600] md:text-[32px] text-[18px] leading-[22px] md:leading-[38.4px]'>Compassionate care for a healthier tomorrow</p>
-          <p className='text-body_text_white md:text-center text-justify font-[500] md:text-[20px] text-[15px] md:w-auto w-full md:leading-[26px] leading-[20px] md:px-0 px-[20px]'>
+          <p className='text-body_text_white md:text-center text-justify font-[500] md:text-[20px] text-[15px] md:w-[1050px] w-full md:leading-[26px] leading-[20px] md:px-0 px-[20px]'>
             Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference.
           </p>
         </div>
@@ -42,12 +42,12 @@ const Network = () => {
         </div>
 
         {/* image and body */}
-        <div className='flex flex-col md:w-[550px] w-full items-center justify-start md:gap-0 md:mr-[50px] gap-[25px]'>
+        <div className='flex flex-col md:w-[550px] w-full items-center justify-start md:mr-[50px] gap-[25px] md:gap-[10px]'>
           <Image src={network_image} alt='network_image' className='md:w-[710px] w-[340px] h-auto'/>
-          <p className='md:w-[550px] text-dark_text_blue font-[600] md:text-[20px] text-[17px] text-center md:text-justify md:p-0 px-4 md:leading-[32px] leading-[20px]'>
+          <p className='md:w-[500px] text-dark_text_blue font-[600] md:text-[24px] text-[17px] text-center md:text-justify md:p-0 px-4 md:leading-[32px] leading-[20px]'>
             Velammal Medical College hospital and Research Institute, Madurai
           </p>
-          <p className='md:w-[550px] text-body_text_white font-[400] md:text-[19px] text-[14px] md:leading-[26px] leading-[20px] md:px-0 px-[20px] text-justify'>
+          <p className='md:w-[500px] text-body_text_white font-[400] md:text-[19px] text-[14px] md:leading-[26px] leading-[20px] md:px-0 px-[20px] text-justify'>
             Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference.
           </p>
         </div>

@@ -19,6 +19,7 @@ const config: Config = {
   			primary_white: '#FFFFFF',
   			secondary_white: '#F0FAFF',
   			body_text_white: '#3C4959',
+			body_text_grey: "#667085",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

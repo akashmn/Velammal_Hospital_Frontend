@@ -52,7 +52,7 @@ const Experts = () => {
       <div className="flex flex-col items-center justify-center md:w-[1053px] w-full gap-[15px] md:gap-[25px]">
         {/* Heading and underline */}
         <div className="flex flex-col items-center justify-center">
-          <p className="text-dark_text_blue text-center font-[600] md:text-[50px] text-[32px] md:leading-[70px] leading-[45px] capitalize md:px-[80px] px-[20px] py-[40px] md:py-[84px]">
+          <p className="text-dark_text_blue text-center font-[700] md:text-[50px] text-[32px] md:leading-[70px] leading-[45px] capitalize md:px-[80px] px-[20px] py-[40px] md:py-[84px]">
             Meet the experts behind your care
           </p>
           <Image src={underline} alt="underline" className="-mt-[40px] md:-mt-[90px]" />

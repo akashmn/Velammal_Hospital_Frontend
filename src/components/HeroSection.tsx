@@ -40,10 +40,10 @@ const HeroSection: React.FC = () => {
 
               <div
                 className="flex flex-row items-start md:items-center justify-start md:justify-start gap-3"
-                onMouseEnter={() => setIsHovered(true)} // Change state on hover
-                onMouseLeave={() => setIsHovered(false)} // Revert state when hover ends
               >
                 <Image
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
                   src={isHovered ? calling_white : calling} // Conditionally render the image
                   alt="caller-image"
                   className="h-[45px] w-[45px] md:h-[55px] md:w-[55px] rounded-full bg-g border p-[15px] border-primary_blue hover:scale-110 hover:bg-[#40c444] transition-all duration-300 hover:rotate-[20deg]"

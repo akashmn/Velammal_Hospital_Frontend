@@ -24,8 +24,8 @@ const Trust: React.FC = () => {
     <div className="h-auto w-full md:py-[72px] py-[40px] flex flex-col items-center md:gap-[100px] gap-[50px]">
         {/* heading and underline */}
         <div className="flex flex-col items-center justify-center md:h-[70px] h-auto w-full md:w-[1021px] px-[15px]">
-            <p className="text-dark_text_blue text-center font-bold md:font-[600] md:text-[56px] text-[35px] leading-none">51 Lakh+ Patients Trust Us</p>
-            <Image src={underline} alt="underline" className="h-[5px] w-[200px]"></Image>
+            <p className="text-dark_text_blue text-center font-bold md:font-bold md:text-[53px] text-[35px] leading-none">51 Lakh+ Patients Trust Us</p>
+            <Image src={underline} alt="underline" className="h-[5px] w-[450px] -ml-[250px]"></Image>
         </div>
 
         {/* body and carousel */}
@@ -35,11 +35,11 @@ const Trust: React.FC = () => {
                 <div className="flex md:flex-row flex-col items-center md:items-start gap-[25px]">
                     <Image src={body_image} alt="body_image" className="md:w-[250px] w-[300px]  h-auto"></Image>
                     <div className="flex flex-col md:w-[238px] w-full gap-[10px] text-center md:text-left">
-                        <p className="text-dark_text_blue font-bold md:font-[600] md:text-[18px] text-[16px] leading-normal">Healthcare with Integrity</p>
-                        <p className="text-body_text_white font-[500] md:text-[15px] text-[12px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
+                        <p className="text-dark_text_blue font-bold md:font-bold md:text-[18px] text-[16px] leading-normal">Healthcare with Integrity</p>
+                        <p className="text-body_text_grey font-[500] md:text-[16px] text-[12px] leading-normal">High-quality, affordable healthcare services for every individual, at every stage of life.</p>
                     </div>
                 </div>
-                <p className="text-body_text_white text-justify font-[500] md:text-[17px] text-[15px] leading-normal md:px-[20px] px-[15px]">
+                <p className="text-body_text_white text-justify font-medium md:text-[18px] text-[15px] leading-normal md:px-[20px] px-[15px]">
                     With over 51 lakh patients treated, Velammal Hospital stands as a beacon of healthcare excellence, offering world-class medical facilities, advanced technologies, and personalized care. Spanning 20 Lakhs square feet, Velammal Hospital is equipped with 2100 beds, 21 state-of-the-art operation theaters, 55 dialysis units, and specialized ICUs. Our modern facilities at Velammal Hospital Madurai combined with a dedicated team of over 450 doctors and 1100 nurses, ensure that every patient receives the highest quality care.
                     <br /><br />
                     From our neonatal ICU to our trusted transplant program, Velammal Hospital combines modern medical technology with compassionate care, serving millions with unmatched expertise.
@@ -79,8 +79,8 @@ const Trust: React.FC = () => {
         {/* Trust Ending section */}
         <div className="flex flex-col items-center justify-center gap-[25px] h-auto w-full md:w-[1228px] px-[15px]">
             <div className="flex flex-col items-center">
-                <p className="text-dark_text_blue text-center font-[600] md:text-[56px] text-[44px] leading-[50px] md:leading-[70px] capitalize">Building trust through care</p>
-                <Image src={underline} alt="underline" className="h-2 w-[200px]"></Image>
+                <p className="text-dark_text_blue text-center font-bold md:text-[53px] text-[44px] leading-[50px] md:leading-[70px] capitalize">Building trust through care</p>
+                <Image src={underline} alt="underline" className="h-[6px] w-[350px] -ml-[400px] -mt-[3px]"></Image>
             </div>
             
             <p className="text-body_text_white text-justify md:text-center font-[500] md:text-[20px] text-[15px] md:leading-[31px] leading-[25px] tracking-[0.3px]">

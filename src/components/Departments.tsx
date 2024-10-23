@@ -20,7 +20,7 @@ const Departments = () => {
             </div>
             <div className="h-full md:w-[824px] w-full md:gap-[40px] gap-[20px] flex flex-col items-center justify-center text-center font-semibold">
                 <p className="md:text-[53px] text-[25px] w-full md:font-bold font-bold md:leading-[61.6px] leading-[40px] capitalize text-center text-dark_text_blue">Discover Our Premier Centers of Medical Excellence</p>
-                <p className="md:text-[16px] text-[16px] w-full font-medium md:leading-[24px] leading-[20px] capitalize md:text-center text-justify text-body_text_white">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
+                <p className="md:text-[18px] text-[16px] w-full md:w-[900px] font-normal md:leading-[24px] leading-[20px] capitalize md:text-center text-justify text-body_text_grey">Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference</p>
             </div>
             <div className="w-[100px] md:w-[150px] h-full flex flex-col md:gap-[80px] gap-[50px]">
                 <Image src={checkup} alt="icon3" className=" hidden md:block max-sm:hidden"/>

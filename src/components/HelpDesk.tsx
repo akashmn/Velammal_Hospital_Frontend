@@ -44,7 +44,7 @@ const HelpDesk = () => {
     <div className="flex flex-col items-center justify-center px-[20px] md:px-[80px] py-[50px] md:py-[130px] h-auto w-full bg-secondary_white gap-[40px]">
         {/* heading, underline */}
         <div className='flex flex-col items-center justify-center'>
-            <p className="text-dark_text_blue text-center font-[600] text-[32px] md:text-[56px] leading-[40px] md:leading-[67.2px] tracking-[-1.12px] capitalize">
+            <p className="text-dark_text_blue text-center font-[700] text-[32px] md:text-[56px] leading-[40px] md:leading-[67.2px] tracking-[-1.12px] capitalize">
                 International Patient Care
             </p>
             <Image src={underline} alt="underline" className='md:-mt-2  max-sm:w-[200px]'></Image>
@@ -75,7 +75,7 @@ const HelpDesk = () => {
                     <p className='text-dark_text_blue text-[20px] md:text-[20px] text-start font-semibold leading-[28px] md:leading-[32px]'>
                         Start Your Personalised Medical Treatment Journey
                     </p>
-                    <p className="text-body_text_white text-[14px] md:text-[15px] leading-[20px] md:leading-[24px] text-left">
+                    <p className=" text-body_text_white text-[14px] md:text-[19px] leading-[20px] md:leading-[26px] text-left">
                         Velammal Hospital offers comprehensive, personalised medical services to international patients, ensuring you receive exceptional care throughout. Our dedicated team supports you from travel arrangements to post-treatment care.
                     </p>
                 </div>
