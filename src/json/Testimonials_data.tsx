@@ -30,6 +30,18 @@ interface Testimonial {
       review:
         "Breast milk, often referred to as liquid gold, is essential for every baby's health. Thanks to the awareness session at Velammal, Mrs. Kalai Selvi committed to donating milk and helping countless babies without affecting her own baby's nutrition.",
     },
+    {
+      name: "Venugopal",
+      image: venugopal,
+      review:
+        "Thanks to the remarkable multidisciplinary team at Velammal Hospital—including general surgeons, lab professionals, and plastic surgeons—this seemingly impossible situation was transformed into a success story, making Mr. Venugopal's leg fully functional.",
+    },
+    {
+      name: "Kavya",
+      image: kavya,
+      review:
+        "Breast milk, often referred to as liquid gold, is essential for every baby's health. Thanks to the awareness session at Velammal, Mrs. Kalai Selvi committed to donating milk and helping countless babies without affecting her own baby's nutrition.",
+    },
   ];
   
   export default testimonialsData;
