@@ -19,7 +19,7 @@ const Footer_links = () => {
   return (
     <div className="w-full bg-dark_text_blue pt-[50px] md:pt-[100px] pl-[20px] md:pl-[80px] pb-5 flex flex-col gap-[100px] md:gap-[170px] text-white">
         {/* heading, body and image */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between md:pr-[180px]">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between md:pr-[180px] max-lg:pr-0">
             {/* heading and body text */}
             <div className="flex flex-col gap-[23px] mb-[20px] md:mb-0">
                 <p className="text-white text-[32px] md:text-[56px] font-bold leading-[125%] uppercase">Always Ready, Always Here.</p>
@@ -29,11 +29,11 @@ const Footer_links = () => {
             </div>
 
             {/* image */}
-            <Image src={image} alt="image" className="h-[300px] w-[320px] md:h-[268px] md:w-[280px]" />
+            <Image src={image} alt="image" className="h-[300px] w-[320px] md:h-[268px] md:w-[280px] md:ml-[100px]" />
         </div>
 
         {/* links */}
-        <div className="md:flex md:flex-row grid grid-cols-2 gap-[50px] md:gap-[60px]">
+        <div className="md:flex md:flex-row lg:items-start lg:justify-center grid grid-cols-2 gap-[50px] md:gap-[60px]">
             {/* logo and locations */}
             <div className="gap-[33px] flex flex-col">
                 {/* location and body */}

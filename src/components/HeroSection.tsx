@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* hero cards */}
-      <div className="md:mx-[100px] md:z-5 mt-[40px] md:-mt-[40px] md:w-[1270px] md:h-[172px] md:flex md:flex-row md:items-center gap-[20px] md:gap-[30px] md:justify-center grid grid-cols-2 pr-[0.5em] md:pr-0 pl-[0.5em] md:pl-0">
+      <div className="md:mx-[100px] md:z-5 mt-[40px] md:-mt-[40px] md:w-auto md:h-[172px] md:flex md:flex-row md:items-center gap-[20px] md:gap-[30px] md:justify-center grid grid-cols-2 pr-[0.5em] md:pr-0 pl-[0.5em] md:pl-0">
         <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
           <Image
             src={consult_online}
