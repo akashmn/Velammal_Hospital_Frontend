@@ -1,6 +1,5 @@
 import "./globals.css";
 import Head from 'next/head';
-import c from "../app/favicon.ico"
 
 export default function RootLayout({
   children,
