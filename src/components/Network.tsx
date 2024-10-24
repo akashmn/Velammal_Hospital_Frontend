@@ -31,8 +31,8 @@ const Network = () => {
         <div className='flex flex-col gap-[27px] md:justify-evenly items-center w-[100%]'>
           {networkDetails.map((link: NetworkDetails, idx:number) => (
             <a key={idx} href={link.url}>
-              <button className="md:w-[650px] md:h-[60px] md:py-[12px] py-[10px] md:px-5 px-2 border-2 border-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-primary_blue">
-                <p className="md:text-[20px] text-[12px] text-dark_text_blue group-hover:text-white duration-300 text-center md:px-0 px-5">
+              <button className="md:w-[650px] w-[350px] md:h-[60px] md:py-[12px] py-[10px] md:px-5 px-2 border-2 border-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-primary_blue">
+                <p className="md:text-[20px] text-[14px] w-[300px] md:w-[700px] text-dark_text_blue group-hover:text-white duration-300 text-start md:px-0 px-5">
                   {link.title}
                 </p>
                 <Image src={icon} alt="arrow up right" className='transition-transform duration-300 ease-in-out group-hover:rotate-45' />
