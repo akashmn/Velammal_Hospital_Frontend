@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <div className='z-10 top-0 sticky drop-shadow-2xl rounded-b-xl flex flex-row w-full h-[90px] p-[20px_25px] gap-[70px] items-center lg:justify-start justify-between flex-shrink-0 bg-secondary_white text-sm'>
+        <div className='z-10 top-0 sticky drop-shadow-2xl rounded-b-xl flex flex-row w-full h-[90px] p-[20px_25px] gap-[70px] items-center lg:justify-center justify-between flex-shrink-0 bg-secondary_white text-sm'>
             {/* Logo */}
             <Image
                 src={logo}
