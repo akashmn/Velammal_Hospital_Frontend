@@ -39,7 +39,7 @@ const Carousel: React.FC = () => {
   }, [largeItems.length]);
 
   return (
-    <div className="flex w-[1277px] max-sm:hidden rounded-xl">
+    <div className="flex w-[1277px] max-sm:hidden rounded-xl overflow-hidden">
       {/* Large Horizontal Carousel */}
       <div className="w-2/3 h-96 relative overflow-hidden">
         <div

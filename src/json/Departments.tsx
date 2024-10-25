@@ -46,10 +46,10 @@ type Department = {
   const departments: Department[] = [
     { name: "Breast & Endocrine", icon: breast_endocrine },
     { name: "Cardiology", icon: cardiology },
+    { name: "Cardio Thoracic Surgery", icon: thoracic },
     { name: "Dental", icon: dental },
     { name: "Dermatology", icon: dermatology },
-    { name: "Cardio Thoracic Surgery", icon: thoracic },
-    { name: "Breast & Endocrine", icon: ent },
+    { name: "ENT", icon: ent },
     { name: "General Medicines", icon: gen_med },
     { name: "General Surgery", icon: gen_surgery },
     { name: "Medical Endocrinology", icon: med_endo },
