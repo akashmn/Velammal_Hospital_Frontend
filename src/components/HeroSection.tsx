@@ -3,7 +3,8 @@
 import consult_online from '@/public/hero_consult_online.svg';
 import health_check from '@/public/hero_health_check.svg';
 import buy_medicines from '@/public/hero_buy_medicines.svg';
-import health_records from '@/public/hero_health_record.svg';
+// import health_records from '@/public/hero_health_record.svg';
+import health_records from '@/public/icon/icon1.png';
 import book_appointment from '@/public/hero_book_appointment.svg';
 import book_appointment_white from '@/public/hero_book_appointment_blue.svg';
 import { useState } from "react";
@@ -94,32 +95,38 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
-          <Image
-            src={health_records}
-            alt="Health Records"
-            height={50}
-            width={50}
-            className="border bg-hero_card_blue rounded-full group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all p-2"
-          />
+          <div className='bg-hero_card_blue group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all  rounded-full'>
+            <Image
+              src={health_records}
+              alt="Buy Medicines"
+              height={50}
+              width={50}
+              className="object-contain p-3"
+            />
+          </div>
+
           <p className="text-[14px] font-semibold">Health Records</p>
         </div>
 
         <div
-      className="w-[11em] md:w-[250px] bg-hero_card_blue h-[11em] md:h-full flex flex-col justify-center items-center gap-5 rounded-xl drop-shadow-2xl group hover:bg-white  duration-300 ease-in-out transition-all"
-      onMouseEnter={() => setIcon(book_appointment_white)} // Change icon on hover
-      onMouseLeave={() => setIcon(book_appointment)} // Reset icon on mouse leave
-    >
-      <Image
-        src={icon} // Use the state variable for the image source
-        alt="Book Appointment"
-        height={50}
-        width={50}
-        className="border rounded-full bg-white group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all p-2"
-      />
-      <p className="text-[14px] text-white font-semibold group-hover:text-black duration-300 ease-in-out transition-all">
-        Book Appointment
-      </p>
-    </div>
+          className="w-[11em] md:w-[250px] bg-hero_card_blue h-[11em] md:h-full flex flex-col justify-center items-center gap-5 rounded-xl drop-shadow-2xl group hover:bg-white  duration-300 ease-in-out transition-all"
+          onMouseEnter={() => setIcon(book_appointment_white)} // Change icon on hover
+          onMouseLeave={() => setIcon(book_appointment)} // Reset icon on mouse leave
+        >
+          <div className='rounded-full bg-white  group-hover:bg-primary_blue duration-300 ease-in-out transition-all '>
+            <Image
+              src={icon} // Use the state variable for the image source
+              alt="Book Appointment"
+              height={50}
+              width={50}
+              className="object-contain p-3"
+            />
+          </div>
+
+          <p className="text-[14px] text-white font-semibold group-hover:text-black duration-300 ease-in-out transition-all">
+            Book Appointment
+          </p>
+        </div>
       </div>
     </div>
   );
