@@ -1,8 +1,8 @@
-// 'use client'
-// import { useEffect } from "react";
+'use client'
+import { useEffect } from "react";
 import "./globals.css";
 import Head from 'next/head';
-// import Lenis from "lenis";
+import Lenis from "lenis";
 
 export default function RootLayout({
   children,
@@ -10,14 +10,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  // useEffect(() => {
-  //   const lenis = new Lenis();
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-  //   requestAnimationFrame(raf);
-  // }, []);
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <html lang="en">
