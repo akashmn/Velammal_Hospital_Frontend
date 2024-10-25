@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
 
       {/* hero cards */}
       <div className="md:z-5 mt-[40px] md:-mt-[40px] md:w-auto md:h-[172px] md:flex md:flex-row md:items-center gap-[20px] md:gap-[30px] md:justify-center grid grid-cols-2 pr-[0.5em] md:pr-0 pl-[0.5em] md:pl-0">
-        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+        <div className="w-[11em] cursor-pointer md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
           <Image
             src={consult_online}
             alt="Consult Online"
@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
           <p className="text-[14px] font-semibold">Consult Online</p>
         </div>
 
-        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+        <div className="w-[11em] cursor-pointer md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
           <Image
             src={health_check}
             alt="Health Check-up"
@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
           <p className="text-[14px] font-semibold">Health Check-up</p>
         </div>
 
-        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+        <div className="w-[11em] cursor-pointer md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
           <Image
             src={buy_medicines}
             alt="Buy Medicines"
@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
           <p className="text-[14px] font-semibold">Buy Medicines</p>
         </div>
 
-        <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
+        <div className="w-[11em] cursor-pointer md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
           <div className='bg-hero_card_blue group-hover:scale-125 group-hover:bg-primary_blue duration-300 ease-in-out transition-all  rounded-full'>
             <Image
               src={health_records}
@@ -109,7 +109,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div
-          className="w-[11em] md:w-[250px] bg-hero_card_blue h-[11em] md:h-full flex flex-col justify-center items-center gap-5 rounded-xl drop-shadow-2xl group hover:bg-white  duration-300 ease-in-out transition-all"
+          className="w-[11em] cursor-pointer md:w-[250px] bg-hero_card_blue h-[11em] md:h-full flex flex-col justify-center items-center gap-5 rounded-xl drop-shadow-2xl group hover:bg-white  duration-300 ease-in-out transition-all"
           onMouseEnter={() => setIcon(book_appointment_white)} // Change icon on hover
           onMouseLeave={() => setIcon(book_appointment)} // Reset icon on mouse leave
         >
