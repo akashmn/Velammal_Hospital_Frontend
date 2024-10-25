@@ -19,12 +19,12 @@ const HeroSection: React.FC = () => {
   const [icon, setIcon] = useState(book_appointment);
 
   return (
-    <div className="h-auto flex flex-col justify-center">
-      <div className="z-0 flex flex-col ml-1 md:ml-[104px]">
-        <div className="z-1 md:flex md:flex-row-reverse">
-          <Image src={hero2} alt="hero-image" />
+    <div className="h-auto flex flex-col justify-center bg-secondary_white">
+      <div className="flex flex-col ">
+        <div className="">
+          <Image src={hero2} alt="hero-image  " className='object-cover w-full h-full' />
         </div>
-        <div className="z-2 -mt-[450px] md:-mt-[803px] h-auto md:h-[764px] w-full md:w-[1146px] flex flex-col gap-5 md:gap-[50px] bg-gradient-to-r from-white to-transparent via-[rgba(255,255,255,0.82)] px-4 md:px-0">
+        <div className="-mt-[450px] md:-mt-[803px] h-auto md:h-[764px] w-full md:w-[1350px]  mx-auto flex flex-col gap-5 md:gap-[50px] px-4 md:px-0">
           <div className="flex flex-col mt-[150px]">
             <p className="text-[25px] md:text-[62px] mt-[10em] md:mt-0 font-bold leading-[120%] tracking-[-1.24px] text-[#011632] capitalize">Healthcare you can trust</p>
             <Image src={underline} alt="hero_underline" className="ml-32 md:ml-[340px] w-[11em] md:w-[27em]" />
@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* hero cards */}
-      <div className="md:mx-[100px] md:z-5 mt-[40px] md:-mt-[40px] md:w-auto md:h-[172px] md:flex md:flex-row md:items-center gap-[20px] md:gap-[30px] md:justify-center grid grid-cols-2 pr-[0.5em] md:pr-0 pl-[0.5em] md:pl-0">
+      <div className="md:z-5 mt-[40px] md:-mt-[40px] md:w-auto md:h-[172px] md:flex md:flex-row md:items-center gap-[20px] md:gap-[30px] md:justify-center grid grid-cols-2 pr-[0.5em] md:pr-0 pl-[0.5em] md:pl-0">
         <div className="w-[11em] md:w-[250px] bg-white h-[11em] md:h-full flex flex-col justify-center items-center py-[40px] px-[10px] gap-5 rounded-xl drop-shadow-2xl group">
           <Image
             src={consult_online}
