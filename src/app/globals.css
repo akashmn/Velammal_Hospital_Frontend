@@ -191,3 +191,8 @@ body::-webkit-scrollbar {
   font-style: italic;
 }
 
+
+/* Hide the scroll bar */
+.scrollbar-hidden {
+  scrollbar-width: none;
+}

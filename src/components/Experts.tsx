@@ -16,11 +16,6 @@ const Experts = () => {
   const [cardsToShow, setCardsToShow] = useState(4); // Default to 4 cards
   const [selectedLocation, setSelectedLocation] = useState<string | null>("Chennai"); // Track selected location
 
-  // State for handling dragging
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [offsetX, setOffsetX] = useState(0);
-
   useEffect(() => {
     const updateCardsToShow = () => {
       if (typeof window !== "undefined") {
@@ -52,41 +47,10 @@ const Experts = () => {
     }
   };
 
-  // Handle drag start
-  const handleDragStart = (e: React.TouchEvent | React.MouseEvent) => {
-    setIsDragging(true);
-    if ("touches" in e) {
-      setStartX(e.touches[0].clientX);
-    } else {
-      setStartX(e.clientX);
-    }
-  };
-
-  // Handle drag move
-  const handleDragMove = (e: React.TouchEvent | React.MouseEvent) => {
-    if (!isDragging) return;
-    let currentX;
-    if ("touches" in e) {
-      currentX = e.touches[0].clientX;
-    } else {
-      currentX = e.clientX;
-    }
-    setOffsetX(currentX - startX);
-  };
-
-  // Handle drag end
-  const handleDragEnd = () => {
-    setIsDragging(false);
-    if (offsetX < -50) {
-      nextCards(); // Swipe left
-    } else if (offsetX > 50) {
-      prevCards(); // Swipe right
-    }
-    setOffsetX(0); // Reset offset after swipe
-  };
-
   return (
-    <div className="w-full flex flex-col items-center justify-center px-[20px] md:px-[50px] pb-[50px] select-none">
+    <div className="w-full flex flex-col items-center justify-center ">
+
+      {/* Meet the experts */}
       <div className="flex flex-col items-center justify-center md:w-[1053px] w-full gap-[15px] md:gap-[25px]">
         {/* Heading and underline */}
         <div className="flex flex-col items-center justify-center">
@@ -121,22 +85,20 @@ const Experts = () => {
         <div className="flex flex-row items-center justify-center gap-4 md:gap-[55px]">
           <button
             className={`h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
-            ${
-              selectedLocation === "Madurai"
+            ${selectedLocation === "Madurai"
                 ? "bg-primary_blue text-white"
                 : "bg-[#F5F6F8] text-black"
-            }`}
+              }`}
             onClick={() => setSelectedLocation("Madurai")}
           >
             Madurai
           </button>
           <button
             className={`h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
-            ${
-              selectedLocation === "Chennai"
+            ${selectedLocation === "Chennai"
                 ? "bg-primary_blue text-white"
                 : "bg-[#F5F6F8] text-black"
-            }`}
+              }`}
             onClick={() => setSelectedLocation("Chennai")}
           >
             Chennai
@@ -145,43 +107,32 @@ const Experts = () => {
       </div>
 
       {/* Doctors slider and button */}
-      <div className="flex flex-col items-center justify-center gap-[50px] mt-[66px]">
+      <div className="flex flex-col items-center justify-center gap-[50px] mt-[66px] w-full overflow-hidden ">
         {/* Doctors cards */}
-        <div
-          className="h-auto w-full flex flex-row gap-[30px] flex-wrap justify-center cursor-grab active:cursor-grabbing"
-          onMouseDown={handleDragStart}
-          onMouseMove={handleDragMove}
-          onMouseUp={handleDragEnd}
-          onMouseLeave={handleDragEnd}
-          onTouchStart={handleDragStart}
-          onTouchMove={handleDragMove}
-          onTouchEnd={handleDragEnd}
-        >
+        <div className="w-full flex flex-row gap-[30px] items-start overflow-x-scroll scrollbar-hidden px-[5%] ">
           {/* Individual cards */}
-          {doctors.slice(currentIndex, currentIndex + cardsToShow).map((doctor, index) => (
-            <div
-              key={index}
-              className="bg-cover bg-center h-auto w-[260px] md:w-[281px] pb-3 pl-3 flex flex-col items-start justify-center rounded-xl"
+          {doctors.map((doctor, index) => (
+            <div key={index} className="bg-cover bg-center min-h-[350px] min-w-[300px] flex flex-col rounded-xl overflow-hidden relative p-3 "
               style={{ backgroundImage: `url(${bg.src})` }}
             >
               {/* Doctor image */}
-              <Image src={doctor.image} alt={doctor.name} className="h-[254px] w-[264px] mt-3" />
+              <Image src={doctor.image} alt={doctor.name} className="h-[254px] w-[264px] " />
               {/* Doctor name and specialization */}
-              <div className="-mt-[50px] flex w-[240px] md:w-[260px] h-[60px] p-[12px_20px] justify-between items-center flex-shrink-0 rounded-[10px] bg-gradient-to-r from-[rgba(37,180,248,0.30)] to-[rgba(37,180,248,0)] backdrop-blur-[81.85px]">
-                <div className="flex flex-col gap-[1px]">
-                  <p className="md:text-[16px] text-[14px] font-bold leading-[120%] capitalize text-dark_text_blue">{doctor.name}</p>
-                  <p className="md:text-[12px] text-[11px] leading-[120%] capitalize text-black">{doctor.specialization}</p>
-                  <p className="md:text-[12px] text-[11px] leading-[120%] capitalize text-black">{doctor.type}</p>
+              <div className="absolute bottom-4 flex justify-between w-[92%] rounded-[10px] bg-gradient-to-r from-[#25B4F8]/30 to-[#25B4F8]/0 backdrop-blur-[81.85px] px-3 py-4">
+                <div className="flex flex-col font-GeneralSans-Semibold">
+                  <p className="text-[18px] font-bold leading-[120%] capitalize text-dark_text_blue">{doctor.name}</p>
+                  <p className="text-[14px]  leading-[120%] font-[450] capitalize text-black mt-1.5">{doctor.specialization}</p>
+                  <p className="text-[14px]  leading-[120%] font-[450] capitalize text-black mt-1">{doctor.type}</p>
                 </div>
                 <button>
-                  <Image src={arrow} alt="arrow" className="transition-transform duration-300 ease-in-out hover:rotate-45"/>
+                  <Image src={arrow} alt="arrow" className="transition-transform duration-300 ease-in-out hover:rotate-45" />
                 </button>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-[20px]">
+        <div className="flex flex-row items-center justify-center gap-[20px] mb-12 lg:mb-20">
           <button onClick={prevCards} disabled={currentIndex === 0}>
             <Image src={left} alt="left" height={60} width={60} className="bg-white border-4 border-primary_blue rounded-full" />
           </button>

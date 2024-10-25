@@ -220,7 +220,7 @@ const Footer_links = () => {
 
 
             {/* contact us and 2 buttons*/}
-            <div className="flex flex-col md:gap-[600px] gap-[50px]">
+            <div className="flex flex-col md:gap-[600px] gap-[50px] relative">
                 <div className="flex flex-col gap-[14px]">
                     <div className="flex flex-col gap-3">
                         <p className="text-[18px] md:text-[20px] normal-case">Contact Us</p>
@@ -235,7 +235,7 @@ const Footer_links = () => {
                     </div>
                 </div>
 
-                <div className="flex md:flex-col items-end md:gap-[70px]">
+                <div className="flex md:flex-col items-end md:gap-[70px] mr-5">
                     {/* back to top button */}
                     <button 
                         className="max-sm:hidden"
