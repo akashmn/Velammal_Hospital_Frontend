@@ -2,8 +2,12 @@ import Image from 'next/image'
 import underline from '@/public/helpdesk_underline.svg'
 import trust_image from '@/public/trust_image.svg'
 import calling_icon from "@/public/Calling.png"
-
 import online_consultation from '@/public/helpdesk_online_consultation.svg'
+import finddoctoricon from '@/public/icon/finddoctoricon.png'
+import specialityicon from '@/public/icon/specialityicon.png'
+import visaicon from '@/public/icon/visaicon.png'
+import planyourtripicon from '@/public/icon/planyourtripicon.png'
+import faqsicon from '@/public/icon/faqsicon.png'
 
 // Example JSON data for cards
 const cardData = [
@@ -15,27 +19,27 @@ const cardData = [
   {
     id: 2,
     title: "Find A Doctor",
-    icon: online_consultation
+    icon: finddoctoricon
   },
   {
     id: 3,
     title: "Specialty",
-    icon: online_consultation
+    icon: specialityicon
   },
   {
     id: 4,
     title: "Visa",
-    icon: online_consultation
+    icon: visaicon
   },
   {
     id: 5,
     title: "Plan Your Trip",
-    icon: online_consultation
+    icon: planyourtripicon
   },
   {
     id: 6,
     title: "FAQ’s",
-    icon: online_consultation
+    icon: faqsicon
   }
 ]
 

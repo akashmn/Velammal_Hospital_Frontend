@@ -1,0 +1,12 @@
+/* Hide any default accordion icons */
+/* Ensure accordion trigger pseudo-element arrows are removed */
+.accordion-trigger::before,
+.accordion-trigger::after,
+[data-accordion-trigger]::before,
+[data-accordion-trigger]::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+  

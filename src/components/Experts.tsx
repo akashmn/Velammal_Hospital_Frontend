@@ -8,6 +8,9 @@ import bg from "@/public/experts_cards_bg.svg";
 import arrow from "@/public/experts_cards_arrow.svg";
 import left from "@/public/testimonial_left_arrow.svg";
 import right from "@/public/testimonial_right_arrow.svg";
+import vector1 from '@/public/doctors/Vector1.png'
+import vector2 from '@/public/doctors/Vector2.png'
+import vector3 from '@/public/doctors/Vector3.png'
 
 import doctors from "@/json/Experts_details";
 
@@ -54,7 +57,7 @@ const Experts = () => {
       <div className="flex flex-col items-center justify-center md:w-[1053px] w-full gap-[15px] md:gap-[25px]">
         {/* Heading and underline */}
         <div className="flex flex-col items-center justify-center">
-          <p className="text-dark_text_blue text-center font-[700] md:text-[50px] text-[32px] md:leading-[70px] leading-[45px] capitalize md:px-[80px] px-[20px] py-[40px] md:py-[84px]">
+          <p className="text-dark_text_blue text-center font-[600] md:text-[50px] text-[32px] md:leading-[70px] leading-[45px] capitalize md:px-[80px] px-[20px] py-[40px] md:py-[84px]">
             Meet the experts behind your care
           </p>
           <Image src={underline} alt="underline" className="-mt-[40px] md:-mt-[90px]" />
@@ -70,21 +73,24 @@ const Experts = () => {
       </div>
 
       {/* Search doctors and places tab */}
-      <div className="flex flex-col items-center justify-center gap-[25px] mt-[50px] md:mt-[100px] w-full">
+      <div className="relative flex flex-col items-center justify-center gap-[25px] mt-[50px] md:mt-[100px] w-full">
+       <Image src={vector1} className="absolute -mt-20 -left-10"/>
+       <Image src={vector2} className="absolute mt-6 -left-10"/>
+       <Image src={vector3} className="absolute mt-20 -left-10"/>
         {/* Search bar */}
         <div className="flex flex-row items-center justify-center gap-5">
           <input
             type="text"
             placeholder="Search Doctors"
-            className="w-[240px] md:w-[400px] h-[50px] md:h-[56px] border-4 border-primary_blue rounded-full p-[20px] md:p-[32px] focus:outline-none focus:ring-0"
+            className="relative w-[240px] md:w-[400px] h-[50px] md:h-[56px] border-4 border-primary_blue rounded-full p-[20px] md:p-[32px] focus:outline-none focus:ring-0"
           />
-          <Image src={search} alt="search icon" height={24} width={24} className="-ml-14 md:-ml-20" />
+          <Image src={search} alt="search icon" height={24} width={24} className="-ml-14 md:-ml-20 relative" />
         </div>
 
         {/* Places tabs */}
         <div className="flex flex-row items-center justify-center gap-4 md:gap-[55px]">
           <button
-            className={`h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
+            className={`h-auto w-[120px] md:w-[146px] border border-[#222E48] border-opacity-20 font-[500] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
             ${selectedLocation === "Madurai"
                 ? "bg-primary_blue text-white"
                 : "bg-[#F5F6F8] text-black"
@@ -94,7 +100,7 @@ const Experts = () => {
             Madurai
           </button>
           <button
-            className={`h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
+            className={`relative h-auto w-[120px] md:w-[146px] flex px-[20px] py-[10px] font-[500] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
             ${selectedLocation === "Chennai"
                 ? "bg-primary_blue text-white"
                 : "bg-[#F5F6F8] text-black"
