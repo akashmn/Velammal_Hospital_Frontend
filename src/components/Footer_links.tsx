@@ -5,7 +5,7 @@ import image from "@/public/footer_image.svg"
 import logo from "@/public/footer_logo.svg"
 import mail from "@/public/footer_mail_icon.svg"
 import call from "@/public/footer_caller_icon.svg"
-import location from "@/public/footer_location.svg"
+
 import header_data from '@/json/Header_data';
 import Link from 'next/link';
 import underline from "@/public/footer_links_underline.svg"

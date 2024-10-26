@@ -74,9 +74,9 @@ const Experts = () => {
 
       {/* Search doctors and places tab */}
       <div className="relative flex flex-col items-center justify-center gap-[25px] mt-[50px] md:mt-[100px] w-full">
-       <Image src={vector1} className="absolute -mt-20 -left-10"/>
-       <Image src={vector2} className="absolute mt-6 -left-10"/>
-       <Image src={vector3} className="absolute mt-20 -left-10"/>
+       <Image src={vector1} alt="vector1" className="absolute -mt-20 -left-10"/>
+       <Image src={vector2} alt="vector2" className="absolute mt-6 -left-10"/>
+       <Image src={vector3} alt="vector3" className="absolute mt-20 -left-10"/>
         {/* Search bar */}
         <div className="flex flex-row items-center justify-center gap-5">
           <input
