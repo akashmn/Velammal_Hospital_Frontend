@@ -5,7 +5,7 @@ import image from "@/public/footer_image.svg"
 import logo from "@/public/footer_logo.svg"
 import mail from "@/public/footer_mail_icon.svg"
 import call from "@/public/footer_caller_icon.svg"
-import location from "@/public/footer_location.svg"
+
 import header_data from '@/json/Header_data';
 import Link from 'next/link';
 import underline from "@/public/footer_links_underline.svg"
@@ -71,7 +71,18 @@ const Footer_links = () => {
                 {/* location */}
                 <div className="flex flex-col gap-[22px]">
                     <p className="text-[20px] md:text-[25px] font-semibold">Location</p>
-                    <Image src={location} alt="location" />
+                    <div>
+                        <iframe
+                            width="500"
+                            height="600"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.5666040090796!2d78.14752597468393!3d9.88667989021303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c56b47b941d5%3A0x5117fc8ffda0969d!2sVelammal%20Hospital%20and%20Medical%20College!5e0!3m2!1sen!2sin!4v1729927728291!5m2!1sen!2sin" 
+                            title="Kerala Management Association"
+                            className="w-full h-full rounded-xl"
+                            
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
 
