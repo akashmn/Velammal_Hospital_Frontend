@@ -60,7 +60,7 @@ const Testimonials = () => {
       <div className="mt-20 w-full flex flex-col items-center gap-5">
         <div className="flex flex-col items-center justify-center">
           <p className="text-center text-2xl md:text-[42px] font-Semibold leading-tight text-dark_text_blue">
-            Patient testimonials
+            Patient Testimonials
           </p>
           <Image src={underline} alt="underline" className="w-40 md:w-80 -mt-2" />
         </div>

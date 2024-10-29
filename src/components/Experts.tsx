@@ -78,17 +78,20 @@ const Experts = () => {
         <Image src={vector2} alt="vector2" className="absolute mt-6 -left-10" />
         <Image src={vector3} alt="vector3" className="absolute mt-20 -left-10" />
         {/* Search bar */}
-        <div className="flex flex-row items-center justify-center gap-5">
-          <input
-            type="text"
-            placeholder="Search Doctors"
-            className="relative font-Medium text-[15px] w-[340px] md:w-[400px] h-[50px] md:h-[56px] border-4 border-primary_blue rounded-full p-[20px] md:p-[32px] focus:outline-none focus:ring-0"
-          />
-          <Image src={search} alt="search icon" height={24} width={24} className="-ml-14 md:-ml-20 relative" />
+        <div className="flex flex-row items-center justify-center gap-5 w-full ">
+          <div className="relative overflow-hidden flex items-center justify-center">
+            <input
+              type="text"
+              placeholder="Search Doctors"
+              className=" font-Medium text-[16px] w-[340px] md:w-[400px] h-[50px] md:h-[66px] border-4 border-primary_blue rounded-full px-5 lg:px-8 focus:outline-none focus:ring-0"
+            />
+            <Image src={search} alt="search icon" height={24} width={24} className="absolute right-8" />
+          </div>
+
         </div>
 
         {/* Places tabs */}
-        <div className="flex flex-row items-center justify-center gap-4 md:gap-[55px]">
+        <div className="flex flex-row items-center justify-center gap-4 md:gap-[55px] w-full">
           <button
             className={`h-auto w-[120px] md:w-[146px] border border-[#222E48] text-[18px] border-opacity-20 font-Medium flex px-[20px] py-[10px] md:px-[30px] md:py-[12px] justify-center items-center gap-[10px] rounded-full
             ${selectedLocation === "Madurai"

@@ -18,7 +18,7 @@ const Network = () => {
 
         {/* subheading & body */}
         <div className='flex flex-col items-center justify-center md:w-[1290px] w-full gap-5'>
-          <p className='text-dark_text_blue text-center font-[600] md:text-[32px] text-[18px] leading-[22px] md:leading-[38.4px]'>Compassionate care for a healthier tomorrow</p>
+          <p className='text-dark_text_blue text-center font-Semibold md:text-[32px] text-[18px] leading-[22px] md:leading-[38.4px]'>Compassionate care for a healthier tomorrow</p>
           <p className='text-body_text_white md:text-center text-justify font-[500] md:text-[20px] text-[15px] md:w-[1050px] w-full md:leading-[26px] leading-[20px] md:px-0 px-[20px]'>
             Delivering world-class medical care through compassion, innovation, and an unwavering commitment to improving lives. Explore all our healthcare services and experience the Velammal difference.
           </p>
