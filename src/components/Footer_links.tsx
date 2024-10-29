@@ -19,7 +19,7 @@ const Footer_links = () => {
   return (
     <div className="w-full bg-dark_text_blue pt-[50px] md:pt-[100px] pl-[20px] md:pl-[80px] pb-5 flex flex-col gap-[100px] md:gap-[170px] text-white">
         {/* heading, body and image */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between md:pr-[180px] max-lg:pr-0">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between md:pr-[180px] max-w-[1430px] mx-auto w-full">
             {/* heading and body text */}
             <div className="flex flex-col gap-[23px] mb-[20px] md:mb-0">
                 <p className="text-white text-[32px] md:text-[56px] font-bold leading-[125%] uppercase">Always Ready, Always Here.</p>

@@ -15,7 +15,7 @@ import Trust from "@/components/Trust";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="">
       <Header/>
       <Navbar/>
       <HeroSection/>

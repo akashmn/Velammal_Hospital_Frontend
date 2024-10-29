@@ -48,7 +48,7 @@ const HelpDesk = () => {
     <div className="flex flex-col items-center justify-center px-[20px] md:px-[80px] py-[50px] md:py-[130px] h-auto w-full bg-secondary_white gap-[40px]">
         {/* heading, underline */}
         <div className='flex flex-col items-center justify-center'>
-            <p className="text-dark_text_blue text-center font-[700] text-[32px] md:text-[56px] leading-[40px] md:leading-[67.2px] tracking-[-1.12px] capitalize">
+            <p className="text-dark_text_blue text-center font-Semibold text-[32px] md:text-[56px] leading-[40px] md:leading-[67.2px] tracking-[-1.12px] capitalize">
                 International Patient Care
             </p>
             <Image src={underline} alt="underline" className='md:-mt-2  max-sm:w-[200px]'></Image>
@@ -68,23 +68,23 @@ const HelpDesk = () => {
                 {cardData.map(card => (
                     <div key={card.id} className="h-[118.55px] w-[144px] bg-white px-[23px] flex flex-col items-center justify-center gap-1 text-center rounded-xl hover:drop-shadow-2xl duration-300">
                         <Image src={card.icon} alt={card.title} height={40} width={40} className="bg-primary_blue p-2 rounded-full" />
-                        <p className="text-[14px] font-semibold">{card.title}</p>
+                        <p className="text-[15px] font-Medium mt-2">{card.title}</p>
                     </div>
                 ))}
             </div>
 
             {/* body and button */}
-            <div className="w-full max-w-[296px] flex flex-col items-center justify-center gap-[20px] md:gap-[40px] md:-mt-[80px]">
+            <div className="w-full max-w-[396px] flex flex-col items-center justify-center gap-[20px] md:gap-[40px] md:-mt-[80px]">
                 <div className='flex flex-col items-center justify-center gap-[11px] text-center'>
-                    <p className='text-dark_text_blue text-[20px] md:text-[20px] text-start font-semibold leading-[28px] md:leading-[32px]'>
+                    <p className='text-dark_text_blue text-[20px] md:text-[20px] text-start font-Semibold leading-[28px] md:leading-[32px]'>
                         Start Your Personalised Medical Treatment Journey
                     </p>
                     <p className=" text-body_text_white text-[14px] md:text-[19px] leading-[20px] md:leading-[26px] text-left">
                         Velammal Hospital offers comprehensive, personalised medical services to international patients, ensuring you receive exceptional care throughout. Our dedicated team supports you from travel arrangements to post-treatment care.
                     </p>
                 </div>
-                <button className="w-full max-w-[300px] h-[50px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-evenly rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-white">
-                    <p className="text-[14px] text-white font-semibold group-hover:text-black">International Help Desk</p>
+                <button className="w-full  h-[50px] md:h-[60px] py-[12px] px-[20px] bg-primary_blue flex flex-row items-center justify-evenly rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-white">
+                    <p className="text-[18px] tracking-wider text-white font-Semibold group-hover:text-black">International Help Desk</p>
                     <Image src={calling_icon} alt="call icon" className='bg-white rounded-full p-1 transition-transform duration-300 ease-in-out group-hover:rotate-[25deg]'/>
                 </button>
             </div>

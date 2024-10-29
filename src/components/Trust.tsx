@@ -21,10 +21,10 @@ import Autoplay from "embla-carousel-autoplay"
 
 const Trust: React.FC = () => {
     return (
-        <div className="h-auto w-full md:py-[72px] py-[40px] flex flex-col items-center md:gap-[100px] gap-[50px]">
+        <div className="h-auto w-full md:py-[72px] py-[40px] flex flex-col items-center md:gap-[100px] gap-[50px] overflow-hidden">
             {/* heading and underline */}
             <div className="flex flex-col items-center justify-center md:h-[70px] h-auto w-full md:w-[1021px] px-[15px]">
-                <p className="text-dark_text_blue text-center font-bold md:font-bold md:text-[53px] text-[35px] leading-none">51 Lakh+ Patients Trust Us</p>
+                <p className="text-dark_text_blue text-center font-bold md:font-Semibold md:text-[53px] text-[35px] leading-none">51 Lakh+ Patients Trust Us</p>
                 <Image src={underline} alt="underline" className="h-[5px] w-[450px] -ml-[250px]"></Image>
             </div>
 

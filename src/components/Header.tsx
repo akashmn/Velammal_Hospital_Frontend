@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <div className="max-sm:hidden h-[34px] w-full bg-accent_blue flex flex-row items-center justify-between px-10 text-white">
             <div className='flex flex-row items-center gap-10'>
                 <div className='flex flex-row gap-5 items-center justify-center'>
-                {header_data.map((link, index) => (
+                    {header_data.map((link, index) => (
                         <Link key={index} href={link.href}>
                             <Image src={link.src} alt={link.alt} height={link.height} width={link.width} />
                         </Link>

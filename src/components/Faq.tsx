@@ -10,11 +10,11 @@ export function AccordionDemo() {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const headingClasses =
-    "text-dark_text_blue font-bold text-[28px] md:text-[42px] leading-[34px] md:leading-[52.5px] capitalize";
+    "text-dark_text_blue font-Semibold text-[28px] md:text-[42px] leading-[34px] md:leading-[52.5px] capitalize";
   const descriptionClasses =
-    "text-body_text_white text-[16px] font-semibold md:text-[20px] leading-[24px] md:leading-[31px] tracking-[0.3px]";
+    "text-body_text_white text-[16px] font-Medium md:text-[20px] leading-[24px] md:leading-[31px] tracking-[0.3px]";
   const triggerClasses =
-    "flex items-center justify-between cursor-pointer text-left py-4 px-4 transition-all duration-300 ease-in-out"; 
+    "flex items-center justify-between cursor-pointer text-left py-4 px-4 transition-all duration-300 ease-in-out";
   const contentClasses =
     "bg-primary_blue text-white font-normal text-[16px] md:text-[18px] leading-[24px] md:leading-[27.9px] tracking-[0.27px] px-4 md:px-[37px] py-4 transition-all duration-300 ease-in-out";
 
@@ -47,10 +47,12 @@ export function AccordionDemo() {
                 className={`${triggerClasses} ${openItem === faq.id ? "bg-primary_blue text-white " : "bg-white text-black "}`}
               >
                 <span className="text-primary_black mr-2">&#8226;</span>
-                <span className="flex-grow">{faq.question}</span>
-                <span className={`flex items-center justify-center border-[2px] rounded-full w-5 h-5 font-bold ${openItem === faq.id ? "border-white text-white" : "border-black text-black"}`}>
-                  {openItem === faq.id ? "-" : "+"}
-                </span>
+                <span className={`flex-grow  ${openItem === faq.id ? "font-Medium text-[18px]" : "font-Regular text-[16px]"}`}>{faq.question}</span>
+                <div className={`w-5 h-5 border-[2px] flex items-center justify-center  rounded-full  relative ${openItem === faq.id ? "border-white text-white" : "border-black text-black"}`}>
+                  <span className={` font-bold text-[20px] mb-1.5 absolute`}>
+                    {openItem === faq.id ? "-" : "+"}
+                  </span>
+                </div>
               </div>
 
               {/* Divider */}
@@ -62,7 +64,7 @@ export function AccordionDemo() {
 
               {/* Content with Animation */}
               <div
-                className={`${openItem === faq.id ? "animate-accordion-down" : "animate-accordion-up"} ${contentClasses}  ${openItem === faq.id ? "block" : "hidden"}`}
+                className={`font-Regular text-[16px] ${openItem === faq.id ? "animate-accordion-down" : "animate-accordion-up"} ${contentClasses}  ${openItem === faq.id ? "block" : "hidden"}`}
                 style={{ height: openItem === faq.id ? "auto" : "0" }} // Adjust height for animation
               >
                 {faq.answer}
