@@ -9,7 +9,7 @@ const Network = () => {
 
   return (
     <div className='bg-secondary_white h-auto w-full md:px-[80px] px-[20px] md:py-[82px] py-[40px] flex flex-col items-center justify-center gap-[50px] md:gap-[87px]'>
-      <div className='flex flex-col items-center justify-center md:gap-[80px] gap-[25px]'>
+      <div className='flex flex-col items-center justify-center md:gap-[80px] gap-[25px] overflow-hidden'>
         {/* heading & underline */}
         <div className='flex flex-col items-center justify-center md:w-[1290px] w-full md:gap-5 gap-2 px-4'>
           <p className='text-[#011632] text-center font-bold md:font-[700] md:text-[56px] text-[28px] md:leading-[21px] leading-none'>Velammal Healthcare Network</p>
@@ -26,12 +26,12 @@ const Network = () => {
       </div>
 
       {/* links and body */}
-      <div className='flex md:flex-row flex-col-reverse items-center justify-center gap-[40px] w-full'>
+      <div className='flex md:flex-row flex-col-reverse items-center justify-center gap-[40px] w-full lg:max-w-[1400px] overflow-hidden'>
         {/* redirecting links */}
         <div className='flex flex-col gap-[27px] md:justify-evenly items-center w-[100%]'>
           {networkDetails.map((link: NetworkDetails, idx:number) => (
             <a key={idx} href={link.url}>
-              <button className="md:w-[650px] w-[350px] md:h-[60px] md:py-[12px] py-[10px] md:px-5 px-2 border-2 border-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-primary_blue">
+              <button className="md:w-[650px] w-full md:h-[60px] md:py-[12px] py-[10px] md:px-5 px-2 border-2 border-primary_blue flex flex-row items-center justify-between rounded-full gap-[15px] hover:scale-105 transition-all duration-300 ease-in-out hover:drop-shadow-2xl group hover:bg-primary_blue">
                 <p className="md:text-[20px] text-[14px] w-[300px] md:w-[700px] text-dark_text_blue group-hover:text-white duration-300 text-start md:px-0 px-5">
                   {link.title}
                 </p>

@@ -22,53 +22,57 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <div className='z-10 top-0 sticky drop-shadow-2xl rounded-b-xl flex flex-row w-full h-[90px] p-[20px_25px] gap-[70px] items-center lg:justify-center justify-between flex-shrink-0 bg-secondary_white text-sm'>
-            {/* Logo */}
-            <Image
-                src={logo}
-                alt='velammel_logo'
-                className='w-[164.842px] h-[58px] shrink-0'
-            />
+        <div className='z-10 top-0 sticky drop-shadow-2xl rounded-b-xl flex flex-row w-full h-[90px] bg-secondary_white text-sm '>
+            <section className="flex flex-row w-full lg:max-w-[1450px] mx-auto items-center gap-14 justify-between flex-shrink-0 px-10">
+                {/* Logo */}
+                <Image
+                    src={logo}
+                    alt='velammel_logo'
+                    className='w-[164.842px] h-[58px] shrink-0'
+                />
 
-            {/* Dropdown Button for Mobile */}
-            <button className='lg:hidden' onClick={toggleDropdown}>
-                {isOpen ? (
-                    <FaCaretUp className='h-[30px] w-[30px]' /> 
-                ) : (
-                    <FaCaretDown className='h-[30px] w-[30px]' /> 
-                )}
-            </button>
+                {/* Dropdown Button for Mobile */}
+                <button className='lg:hidden  z-20' onClick={toggleDropdown}>
+                    {isOpen ? (
+                        <FaCaretUp className='h-[30px] w-[30px]' />
+                    ) : (
+                        <FaCaretDown className='h-[30px] w-[30px]' />
+                    )}
+                </button>
 
-            {/* Navbar Links for Desktop */}
-            <div className='lg:flex lg:flex-row lg:items-center lg:justify-around hidden gap-11'>
-                {Navbar_data.map((link, index) => (
-                    <div className="flex flex-row gap-11" key={index}>
-                        <Image src={navbar_line} alt="navbar_line"></Image>
+                {/* Navbar Links for Desktop */}
+                <div className='w-full lg:flex lg:flex-row lg:items-center lg:justify-between hidden'>
+                    {Navbar_data.map((link, index) => (
+                        <>
+                            <Image src={navbar_line} alt="navbar_line" className={`${index == 0 && 'hidden'}`}></Image>
+                            <div className="flex flex-row gap-10 text-[14px]" key={index}>
+                                <Link
+                                    key={index}
+                                    href={link.href}
+                                    onClick={() => handleLinkClick(link.href)}
+                                    className={activeLink === link.href ? "font-Semibold text-base" : "font-Medium  tracking-wide"}
+                                >
+                                    {link.text}
+                                </Link>
+                            </div>
+                        </>
+                    ))}
+                </div>
+
+                {/* Navbar Links for Mobile (shown on dropdown click) */}
+                <div className={`lg:hidden absolute top-10 left-0 w-full bg-secondary_white shadow-lg flex flex-col items-center pb-3 transition-all duration-500 ease-in-out ${isOpen ? "max-h-[300px] opacity-100 z-10" : "max-h-0 opacity-0 overflow-hidden"}`}>
+                    {Navbar_data.map((link, index) => (
                         <Link
                             key={index}
                             href={link.href}
                             onClick={() => handleLinkClick(link.href)}
-                            className={activeLink === link.href ? "font-bold text-base" : "font-medium"}
+                            className={`py-2 text-base w-full text-center ${activeLink === link.href ? "font-semibold" : ""}`}
                         >
                             {link.text}
                         </Link>
-                    </div>
-                ))}
-            </div>
-
-            {/* Navbar Links for Mobile (shown on dropdown click) */}
-            <div className={`lg:hidden absolute top-[90px] left-0 w-full bg-secondary_white shadow-lg flex flex-col items-center pb-3 transition-all duration-500 ease-in-out ${isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
-                {Navbar_data.map((link, index) => (
-                    <Link
-                        key={index}
-                        href={link.href}
-                        onClick={() => handleLinkClick(link.href)}
-                        className={`py-2 text-base w-full text-center ${activeLink === link.href ? "font-semibold" : ""}`}
-                    >
-                        {link.text}
-                    </Link>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </section>
         </div>
     );
 };
